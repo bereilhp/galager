@@ -2,12 +2,12 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className>
+    <div>
       <Head>
         <title>Home</title>
         <link rel="icon" href="/galager.ico" />
       </Head>
-      <div className="">
+      <div>
         <body>
           <h1>Galager</h1>
         </body>

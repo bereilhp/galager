@@ -2,13 +2,13 @@ import Head from "next/head";
 
 export default function Login() {
   return (
-    <div className>
+    <div>
       <Head>
         <title>Login Page</title>
         <link rel="icon" href="/galager.ico" />
       </Head>
       <div className="bg-slate-800 flex items-center justify-center h-screen">
-        <form className="">
+        <form>
           <div className="mb-4">
             <label className="text-white text-2xl">Email:</label>
             <input className="w-full px-4 py-2 border rounded-lg text-green-500" type="email" required />
