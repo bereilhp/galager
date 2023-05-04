@@ -8,10 +8,7 @@ export default function Home() {
         <link rel="icon" href="/galager.ico" />
       </Head>
       <div>
-        <body>
-          <h1>Galager</h1>
-        </body>
-
+          <p>Galager</p>
       </div>
     </div>
   );
