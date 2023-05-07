@@ -1,5 +1,13 @@
-.firstDiv {
-    @apply bg-slate-800 flex items-center justify-center h-screen;
+.background {
+    @apply bg-slate-800 h-screen w-screen flex justify-center items-center;
+}
+
+.center {
+    @apply flex flex-col items-center justify-center h-full;
+}
+
+.head {
+    @apply text-6xl text-white;
 }
 
 .eAndP {
@@ -7,17 +15,17 @@
 }
 
 .eAndPInput {
-    @apply w-full px-4 py-2 border rounded-lg text-green-500
+    @apply w-full px-4 py-2 border rounded-lg text-green-500;
 }
 
 .bottom4 {
-    @apply mb-4
+    @apply mb-4;
 }
 
 .bottom8 {
-    @apply mb-8
+    @apply mb-8;
 }
 
 .buttonSubmit {
-    @apply text-2xl w-full px-4 py-2 text-black bg-blue-500 rounded hover:bg-sky-700
+    @apply text-2xl w-full px-4 py-2 text-black bg-blue-500 rounded hover:bg-sky-700;
 }
