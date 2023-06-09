@@ -1,3 +1,3 @@
 # galager
 
-Node version = v18.14.2
+Node version = v18.16.0
