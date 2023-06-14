@@ -1,4 +1,4 @@
-//import './globals.css'
+import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark } from '@clerk/themes';
 
