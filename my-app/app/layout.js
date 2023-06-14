@@ -1,9 +1,6 @@
 //import './globals.css'
-import { Open_Sans } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark } from '@clerk/themes';
-
-const open_sans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
     <html lang="en">
-      <body style={ open_sans.style }>{children}</body>
+      <body>{children}</body>
     </html>
   </ClerkProvider>
   )
