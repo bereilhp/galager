@@ -9,10 +9,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider appearance={{ baseTheme: dark }}>
     <html lang="en">
-      <body>{children}</body>
+      <ClerkProvider appearance={{ baseTheme: dark }}>
+        <body>{children}</body>
+      </ClerkProvider>
     </html>
-  </ClerkProvider>
   )
 }
