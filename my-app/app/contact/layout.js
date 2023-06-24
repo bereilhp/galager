@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Sign-up',
+  title: 'Contact',
   description: '',
 }
 
 export default function ContactLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      {children}
+    </>
   )
 }
