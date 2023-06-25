@@ -7,7 +7,7 @@ export default function Contact() {
             <h1 className={style.center}>
                 Contact Us
             </h1>
-            <p className={style.text}> For any inquiries or feedback, please feel free to reach out to us at <strong>galagerOfficial@proton.me.</strong></p>
+            <p className={style.text}> For any inquiries or feedback, please feel free to reach out to us at <strong>galagerOfficial@proton.me</strong></p>
         </div>
     );
 };
