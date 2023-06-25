@@ -7,8 +7,8 @@ export default function Homepage() {
             <div className={style.center}>
                 <Image
                     src="/_img/logo.png"
-                    width={1000}
-                    height={300}
+                    width={800}
+                    height={200}
                     alt="Galager Logo"
                 />
             </div>

@@ -1,19 +1,22 @@
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import style from "./navbar.module.css"
+import style from "./navbar.module.css";
 
 export default function Navbar() {
   return (
     <div>
-      <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/">Learn</Link></li>
-        <li><Link href="/">Exercises</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-      </ul>
-      <div className={style.right}>
-        <UserButton></UserButton>
+      <div className={style.navbar}>
+        <nav className={style.navbarLinks}>
+          <Link href="/">Home</Link>
+          <Link href="/">Learn</Link>
+          <Link href="/">Exercises</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+        <div className={style.userButton}>
+          <UserButton></UserButton>
+        </div>
       </div>
+      <div className={style.navbarLine}></div>
     </div>
   );
 }
