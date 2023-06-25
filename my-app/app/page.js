@@ -1,5 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
-import Navbar from "./_components/Navbar";
+import Navbar from "./_components/_navbar/Navbar";
 
 export default function Home() {
   return (
