@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/nextjs";
 import Navbar from "./_components/_navbar/Navbar";
+import Homepage from "./_components/_homepage/Homepage";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <Navbar/>
       </div>
       <div>
-        <h1>Welcome to Galager</h1>
+        <Homepage/>
       </div>
     </div>
   )

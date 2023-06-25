@@ -1,0 +1,12 @@
+.center {
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.text {
+    margin-left: 1vh;
+    font-size: x-large;
+}
