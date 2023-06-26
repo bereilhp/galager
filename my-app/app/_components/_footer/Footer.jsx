@@ -8,8 +8,8 @@ export default function Footer() {
             <div>
                 <nav className={style.nav}>
                     <Link href="/">Home</Link>
-                    <Link href="/">Learn</Link>
-                    <Link href="/">Exercises</Link>
+                    <Link href="/learn">Learn</Link>
+                    <Link href="/exercises">Exercises</Link>
                     <Link href="/contact">Contact</Link>
                 </nav>
                 <a
