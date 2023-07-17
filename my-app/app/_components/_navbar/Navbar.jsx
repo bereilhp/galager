@@ -8,11 +8,13 @@ export default function Navbar() {
     <div>
       <div className={style.navbar}>
         <nav className={style.navbarLinks}>
-          <Image src="/_img/favicon.ico"
-                    width={30}
-                    height={30}
+          <Link href="/">
+          <Image src="/_img/logo.ico"
+                    width={180}
+                    height={45}
                     alt="Galager Logo"
                 />
+          </Link>
           <div className={style.pad}></div>
           <Link href="/">Home</Link>
           <Link href="/learn">Learn</Link>
