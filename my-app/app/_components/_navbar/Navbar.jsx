@@ -7,15 +7,15 @@ export default function Navbar() {
   return (
     <div>
       <div className={style.navbar}>
+
+        <Link href="/">
+          <Image src="/_img/favicon.ico"
+            width={40} //180
+            height={40} //45
+            alt="Galager Logo"
+          />
+        </Link>
         <nav className={style.navbarLinks}>
-          <Link href="/">
-          <Image src="/_img/logo.ico"
-                    width={180}
-                    height={45}
-                    alt="Galager Logo"
-                />
-          </Link>
-          <div className={style.pad}></div>
           <Link href="/">Home</Link>
           <Link href="/learn">Learn</Link>
           <Link href="exercises">Exercises</Link>
