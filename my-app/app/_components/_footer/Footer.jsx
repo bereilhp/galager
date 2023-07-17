@@ -18,8 +18,8 @@ export default function Footer() {
                 >
                     <Image
                         src="/_img/github-mark/github-mark.png"
-                        width={30}
-                        height={30}
+                        width={35}
+                        height={35}
                         alt="GitHub Logo"></Image>
                 </a>
             </div>
