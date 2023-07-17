@@ -4,9 +4,33 @@
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-}
-
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 .text {
     margin-left: 1vh;
     font-size: x-large;
+    color: rgb(0, 175, 9);
+    font-style: italic;
+    font-family: monospace;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.mail {
+    color: black;
+}
+
+.padding {
+    padding: 0.5vh;
 }
