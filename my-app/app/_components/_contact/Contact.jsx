@@ -24,6 +24,7 @@ export default function Contact() {
                     alt="Galager Logo"
                 ></Image>
             </div>
+            <div className={style.padBot}></div>
         </div>
     );
 };

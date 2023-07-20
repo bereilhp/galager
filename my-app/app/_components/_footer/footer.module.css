@@ -1,12 +1,10 @@
 .footer {
-    background-color: #f5f5f5;
     padding: 2vh;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    border-top: 1px solid #ccc;
+    border-top: 0.3vh solid #ffffff;
     font-size: x-large;
 }
 
@@ -22,7 +20,7 @@
 }
 
 .footer nav a {
-    color: #555;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }

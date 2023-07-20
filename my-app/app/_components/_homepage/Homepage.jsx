@@ -10,9 +10,18 @@ export default function Homepage() {
       <OurMission></OurMission>
       <AboutUs></AboutUs>
       <MeetTheTeam></MeetTheTeam>
-      <div className={style.center}>
-        <Image src="/_img/logo.png" width={800} height={225} alt="Galager Logo" />
-      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

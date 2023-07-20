@@ -17,7 +17,7 @@ export default function Footer() {
                     target="_blank"
                 >
                     <Image
-                        src="/_img/github-mark/github-mark.png"
+                        src="/_img/github-mark/github-mark-white.png"
                         width={35}
                         height={35}
                         alt="GitHub Logo"></Image>
