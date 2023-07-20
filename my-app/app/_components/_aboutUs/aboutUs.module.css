@@ -8,14 +8,11 @@
 .title {
     font-size: 24px;
     font-weight: bold;
-    color: #007f00;
-    /* Green color */
+    color: #00ff00;
     margin-top: 20px;
     text-align: center;
-    /* Add this line to center the titles */
 }
 
 .green {
     color: #007f00;
-    /* Green color */
 }
