@@ -8,7 +8,7 @@ export default function Homepage() {
                 <Image
                     src="/_img/logo.png"
                     width={800}
-                    height={200}
+                    height={225}
                     alt="Galager Logo"
                 />
             </div>
