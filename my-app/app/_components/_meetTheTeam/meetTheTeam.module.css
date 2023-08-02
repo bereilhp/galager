@@ -6,13 +6,18 @@
 }
 
 .title {
-    font-size: 24px;
+    font-size: xxx-large;
     font-weight: bold;
     color: #00ff00;
-    margin-top: 20px;
+    margin-top: 2vh;
     text-align: center;
 }
 
 .green {
-    color: #007f00;
+    color: #00ff00;
+}
+
+.text {
+    color: #000000;
+    font-size: x-large;
 }
