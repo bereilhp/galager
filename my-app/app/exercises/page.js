@@ -5,6 +5,7 @@ export default function Page() {
   return (
     <div>
       <Navbar/>
+      <h1>Soy Exercises</h1>
       <Footer/>
     </div>
   )
