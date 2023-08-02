@@ -20,7 +20,7 @@
 .text {
     margin-left: 1vh;
     font-size: x-large;
-    color: rgb(0, 175, 9);
+    color: #00ff00;
     font-style: italic;
     font-family: monospace;
     opacity: 0;
