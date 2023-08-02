@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <Navbar/>
-      <h1>Soy Lern</h1>
+      <h1>Soy Learn</h1>
       <Footer/>
     </div>
   )
