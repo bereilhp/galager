@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    border-top: 0.3vh solid #ffffff;
+    border-top: 0.3vh solid #DDE6ED;
     font-size: x-large;
 }
 
@@ -20,17 +20,12 @@
 }
 
 .footer nav a {
-    color: #ffffff;
+    color: #DDE6ED;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer nav a:hover {
-    color: #000;
+    color: #27374D;
 }
 
-.footer p {
-    color: #777;
-    font-size: 2vh;
-    margin-top: 1.5vh;
-}
