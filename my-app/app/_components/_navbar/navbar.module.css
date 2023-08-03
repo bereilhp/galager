@@ -1,8 +1,8 @@
 .navbar {
     top: 0;
     z-index: 999;
-    background-color: #2f4f4f;
-    padding: 10px;
+    background-color: #526D82;
+    padding: 1vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,19 +15,19 @@
 }
 
 .navbar a {
-    color: #fff;
+    color: #DDE6ED;
     text-decoration: none;
     margin-right: 2vh;
 }
 
 .navbar a:hover {
-    color: #020202;
+    color: #27374D;
 }
 
 .userButton {
-    margin-left: 10px;
+    margin-left: 1vh;
 }
 
 .navbarLine {
-    border-bottom: 0.3vh solid #ffffff;
+    border-bottom: 0.3vh solid #DDE6ED;
 }
