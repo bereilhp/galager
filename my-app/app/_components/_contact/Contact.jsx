@@ -9,8 +9,8 @@ export default function Contact() {
             <div className={style.center}>
                 <Image
                     src="/_img/logo.png"
-                    width={780}
-                    height={200}
+                    width={800}
+                    height={225}
                     alt="Galager Logo"
                 />
             </div>
@@ -19,8 +19,8 @@ export default function Contact() {
             <div className={style.center}>
                 <Image
                     src="/_img/homer.gif"
-                    width={500}
-                    height={220}
+                    width={600}
+                    height={275}
                     alt="Galager Logo"
                 ></Image>
             </div>
