@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className={style.footer}>
-            <div>
+            <div className={style.pad}>
                 <nav className={style.nav}>
                     <Link href="/">Home</Link>
                     <Link href="/learn">Learn</Link>
@@ -18,8 +18,8 @@ export default function Footer() {
                 >
                     <Image
                         src="/_img/github-mark/github-mark-white.png"
-                        width={35}
-                        height={35}
+                        width={30}
+                        height={30}
                         alt="GitHub Logo"></Image>
                 </a>
             </div>
