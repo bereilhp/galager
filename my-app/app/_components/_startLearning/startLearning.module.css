@@ -1,23 +1,19 @@
-/* button.module.css */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0070f3;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Add a smooth transition effect */
-  }
-  
-  /* Hover effect */
-  .button:hover {
-    background-color: #0054b0; /* Change to a darker shade on hover */
-  }
-  
-  /* Click effect */
-  .button:active {
-    background-color: #004799; /* Change to a darker shade when clicked */
-  }
-  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0054b0;
+}
+
+.button:active {
+  background-color: #004799;
+}
