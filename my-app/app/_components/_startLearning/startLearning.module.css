@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0070f3;
+  background-color: #27374D;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -11,9 +11,9 @@
 }
 
 .button:hover {
-  background-color: #0054b0;
+  background-color: #172335;
 }
 
 .button:active {
-  background-color: #004799;
+  background-color: #27374D;
 }
