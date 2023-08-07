@@ -4,6 +4,7 @@ import OurMission from "../_ourMission/OurMission";
 import AboutUs from "../_aboutUs/AboutUs";
 import MeetTheTeam from "../_meetTheTeam/MeetTheTeam";
 import Pad from "../_pad/Pad";
+import StartLearn from "../_startLearn/StartLearn";
 
 export default function Homepage() {
   return (
@@ -11,6 +12,8 @@ export default function Homepage() {
       <OurMission></OurMission>
       <AboutUs></AboutUs>
       <MeetTheTeam></MeetTheTeam>
+      <Pad></Pad>
+      <StartLearn></StartLearn>
       <Pad></Pad>
     </div>
   );
