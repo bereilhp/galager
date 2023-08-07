@@ -1,24 +1,65 @@
+/* aboutUs.module.css */
+
 .center {
     margin: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.title {
-    font-size: xxx-large;
+  }
+  
+  .missionContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 4vh;
     font-weight: bold;
     color: #27374D;
-    margin-top: 2vh;
-    text-align: center;
-}
-
-.green {
+    margin-bottom: 2vh;
+  }
+  
+  .green {
     color: #27374D;
     font-weight: bold;
-}
-
-.text {
+  }
+  
+  .blueLine {
+    width: 4vw;
+    height: 0.35vh;
+    background-color: #27374D;
+    margin-bottom: 2vh;
+  }
+  
+  .text {
     color: #000000;
-    font-size: x-large;
-}
+    font-size: 2.5vh;
+  }
+  
+  .imageContainer {
+    margin-left: 2vw; /* Adjust the spacing between the text and image as needed */
+  }
+  
+  .image {
+    opacity: 0;
+    animation: fadeInImage 2s forwards;
+  }
+  
+  .textContainer {
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+  }
+  
+  /* Fading animations */
+  @keyframes fadeInImage {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+  }
+  
