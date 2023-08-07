@@ -18,7 +18,7 @@ export default function OurMission() {
                     <div className={style.title}>Our Mission</div>
                     <div className={style.blueLine}></div>
                     <div className={style.text}>
-                        At <span className={style.galager}>Galager</span>, our mission is to empower individuals of all abilities to learn coding.
+                        Our mission is to empower individuals of all abilities to learn coding.
                     </div>
                 </div>
             </div>
