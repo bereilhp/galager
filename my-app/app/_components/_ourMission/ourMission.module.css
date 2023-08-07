@@ -5,20 +5,57 @@
     align-items: center;
 }
 
-.title {
-    font-size: xxx-large;
-    font-weight: bold;
-    color: #27374D;
-    margin-top: 2vh;
-    text-align: center;
+.missionContainer {
+    display: flex;
+    align-items: center;
 }
 
-.green {
+.imageContainer {
+    margin-right: 2vw;
+}
+
+.title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #27374D;
+    margin-bottom: 2vh;
+}
+
+.galager {
     color: #27374D;
     font-weight: bold;
+}
+
+.blueLine {
+    width: 4vw;
+    height: 0.35vh;
+    background-color: #27374D;
+    margin-bottom: 2vh;
+}
+
+.image {
+    opacity: 0;
+    animation: fadeInImage 2s forwards;
+}
+
+.textContainer {
+    opacity: 0;
+    animation: fadeInText 2s forwards;
 }
 
 .text {
     color: #000000;
-    font-size: x-large;
+    font-size: 2.5vh;
+}
+
+@keyframes fadeInImage {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
 }
