@@ -8,7 +8,7 @@ import Space from "../_space/Space";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className={style.homepageContainer}>
       <Pad></Pad>
       <AboutUs></AboutUs>
       <Space></Space>
