@@ -9,7 +9,6 @@ import StartLearn from "../_startLearn/StartLearn";
 export default function Homepage() {
   return (
     <div>
-      
       <AboutUs></AboutUs>
       <OurMission></OurMission>     
       <MeetTheTeam></MeetTheTeam>
