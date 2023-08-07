@@ -1,18 +1,17 @@
-import { UserButton } from "@clerk/nextjs";
 import Navbar from "./_components/_navbar/Navbar";
 import Homepage from "./_components/_homepage/Homepage";
-import Footer from "./_components/_footer/Footer";
+import FooterFixed from "./_components/_footerFixed/FooterFixed";
 
 export default function Home() {
   return (
     <div>
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
       <div>
-        <Homepage/>
+        <Homepage />
       </div>
-      <Footer></Footer>
+      <FooterFixed></FooterFixed>
     </div>
   )
 }

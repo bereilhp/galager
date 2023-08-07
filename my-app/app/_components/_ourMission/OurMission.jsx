@@ -7,9 +7,9 @@ export default function OurMission() {
             <div className={style.missionContainer}>
                 <div className={style.imageContainer}>
                     <Image
-                        src="/_img/ourMission.svg"
-                        width={200}
-                        height={225}
+                        src="/_img/ourMission.png"
+                        width={150}
+                        height={150}
                         alt="Arrow in the center of a target"
                         className={style.image}
                     />
@@ -18,7 +18,7 @@ export default function OurMission() {
                     <div className={style.title}>Our Mission</div>
                     <div className={style.blueLine}></div>
                     <div className={style.text}>
-                        Our mission is to empower individuals of all abilities.
+                        Our mission is to empower individuals of all abilities to learn to code.
                     </div>
                 </div>
             </div>

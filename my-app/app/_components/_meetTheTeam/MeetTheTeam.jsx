@@ -8,8 +8,8 @@ export default function MeetTheTeam() {
                 <div className={style.imageContainer}>
                     <Image
                         src="/_img/meetTheTeam.png"
-                        width={200}
-                        height={225}
+                        width={150}
+                        height={150}
                         alt="Dev coding"
                         className={style.image}
                     />
