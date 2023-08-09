@@ -17,18 +17,18 @@
 }
 
 .backButton {
-    background-color: #ff0000;
-    color: white;
+    background-color: #27374D;
+    color: #DDE6ED;
     margin-right: 2vw;
 }
 
 .nextButton {
-    background-color: #00ff11;
-    color: white;
+    background-color: #27374D;
+    color: #DDE6ED;
     margin-left: 2vw;
 }
 
 .backButton:hover,
 .nextButton:hover {
-    background-color: #007bf6;
+    background-color: #00304f8f;
 }
