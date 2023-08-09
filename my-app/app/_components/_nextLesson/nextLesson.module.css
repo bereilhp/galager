@@ -1,0 +1,34 @@
+.lessonButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 2vw;
+}
+
+.backButton,
+.nextButton {
+    padding: 1.5vh 2vw;
+    border: none;
+    border-radius: 2vh;
+    font-size: medium;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.backButton {
+    background-color: #ff0000;
+    color: white;
+    margin-right: 2vw;
+}
+
+.nextButton {
+    background-color: #00ff11;
+    color: white;
+    margin-left: 2vw;
+}
+
+.backButton:hover,
+.nextButton:hover {
+    background-color: #007bf6;
+}
