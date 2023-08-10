@@ -1,7 +1,11 @@
+"use client";
+
+import Signup from "../_components/_signup/Signup";
+
 export default function SignupPage() {
     return (
         <div>
-            <h1>Soy Sign Up</h1>
+            <Signup></Signup>
         </div>
     )
 }
