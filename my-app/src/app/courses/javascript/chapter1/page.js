@@ -1,6 +1,6 @@
-import FooterFixed from "@/app/_components/_footerFixed/FooterFixed";
-import Navbar from "@/app/_components/_navbar/Navbar";
-import NextLesson from "@/app/_components/_nextLesson/NextLesson";
+import FooterFixed from "@/src/app/_components/_footerFixed/FooterFixed";
+import Navbar from "@/src/app/_components/_navbar/Navbar";
+import NextLesson from "@/src/app/_components/_nextLesson/NextLesson";
 
 export default function Page() {
   const currentChapter = 1;
