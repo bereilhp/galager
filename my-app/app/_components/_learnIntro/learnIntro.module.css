@@ -1,0 +1,26 @@
+.introContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.introContent {
+    flex: 1;
+    padding-right: 1vw;
+}
+
+.introHeading {
+    font-size: xx-large;
+    margin-bottom: 1vh;
+}
+
+.introDescription {
+    font-size: large;
+    margin-bottom: 3vh;
+}
+
+.introImage {
+    flex: 1;
+    text-align: center;
+}
