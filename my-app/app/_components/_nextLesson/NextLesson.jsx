@@ -11,12 +11,12 @@ export default function NextLesson({ currentChapter }) {
   return (
     <div className={styles.lessonButtons}>
       {hasPreviousChapter && (
-        <Link href={`/learn/chapter${previousChapter}`} className={styles.backButton}>
+        <Link href={`/courses/javascript/chapter${previousChapter}`} className={styles.backButton}>
           Previous Chapter
         </Link>
       )}
       {hasNextChapter && (
-        <Link href={`/learn/chapter${nextChapter}`} className={styles.nextButton}>
+        <Link href={`/courses/javascript/chapter${nextChapter}`} className={styles.nextButton}>
           Next Chapter
         </Link>
       )}
