@@ -1,7 +1,9 @@
+import Login from "../_components/_login/Login";
+
 export default function LoginPage() {
     return (
         <div>
-            <h1>Soy Login</h1>
+            <Login></Login>
         </div>
     )
 }

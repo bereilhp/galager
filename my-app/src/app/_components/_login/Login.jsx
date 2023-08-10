@@ -4,33 +4,21 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { axios } from "axios";
-import styles from "./signup.module.css";
+import styles from "./login.module.css";
 
-export default function Signup() {
+export default function Login() {
     const [user, setUser] = React.useState({
         email: "",
         password: "",
-        username: "",
     })
 
-    const onSignup = async () => {
+    const onLogin = async () => {
 
     }
     return (
         <div className={styles.signupContainer}>
             <div className={styles.formContainer}>
-                <h1 className={styles.title}>Sign Up</h1>
-                <div className={styles.inputGroup}>
-                    <label className={styles.label} htmlFor="username">Username:</label>
-                    <input
-                        className={styles.input}
-                        id="username"
-                        type="text"
-                        value={user.username}
-                        onChange={(e) => setUser({ ...user, username: e.target.value })}
-                        placeholder="Enter your username"
-                    />
-                </div>
+                <h1 className={styles.title}>Login</h1>
                 <div className={styles.inputGroup}>
                     <label className={styles.label} htmlFor="email">Email:</label>
                     <input
@@ -53,11 +41,11 @@ export default function Signup() {
                         placeholder="Enter your password"
                     />
                 </div>
-                <button className={styles.signupButton} onClick={onSignup}>
-                    Sign up
+                <button className={styles.signupButton} onClick={onLogin}>
+                    Login
                 </button>
                 <div className={styles.loginLink}>
-                    Already have an account? <Link href="/login">Login</Link>
+                    Don't have an account? <Link href="/signup">Sign up</Link>
                 </div>
             </div>
         </div>
