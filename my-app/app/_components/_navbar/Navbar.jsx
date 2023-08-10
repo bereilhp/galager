@@ -18,6 +18,7 @@ export default function Navbar() {
         <nav className={style.navbarLinks}>
           <Link href="/">Home</Link>
           <Link href="/learn">Learn</Link>
+          <Link href="/courses">Courses</Link>
           <Link href="exercises">Exercises</Link>
           <Link href="/contact">Contact</Link>
         </nav>
