@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import styles from "./login.module.css";
-import { toast } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Login() {
     const router = useRouter();
@@ -21,14 +21,15 @@ export default function Login() {
         try {
             setLoading(true);
             const response = await axios.post("/api/users/login", user);
+            toast.success("Successfully logged in");
             console.log("Login success", response.data);
-            toast.success("Login success");
-            router.push("/profile")
-
-
+            setTimeout(() => {
+                router.push("/profile")
+                console.log("Timeout finished!");
+            }, 1000);
         } catch (error) {
             console.log("Login failed", error.message);
-            toast.error(error.message)
+            toast.error("This didn't work.")
         } finally {
             setLoading(false)
         }
@@ -43,7 +44,9 @@ export default function Login() {
     }, [user])
 
     return (
+
         <div className={styles.signupContainer}>
+            <Toaster></Toaster>
             <div className={styles.formContainer}>
                 <h1 className={styles.title}>{loading ? "Checking credentials" : "Log In"}</h1>
                 <div className={styles.inputGroup}>
