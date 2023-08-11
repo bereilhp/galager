@@ -3,6 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import style from "./logout.module.css"
 
 export default function Logout() {
     const router = useRouter();
@@ -20,7 +21,7 @@ export default function Logout() {
     }
     return (
         <div>
-            <button onClick={logout}>Log out</button>
+            <button onClick={logout} className={style.button}>Log out</button>
         </div>
     )
 }
