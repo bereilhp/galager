@@ -3,23 +3,12 @@ import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-import style from "./logout.module.css"
+import style from "./getUserDetails.module.css"
 import { useState } from "react";
 
-export default function Logout() {
+export default function GetUserDetails() {
     const router = useRouter();
     const [data, setData] = useState("nothing")
-
-    const logout = async () => {
-        try {
-            await axios.get("api/users/logout")
-            toast.success("Logout succesfull")
-            router.push("/login")
-        } catch (error) {
-            console.log(error.message);
-            toast.error(error.message)
-        }
-    }
 
     const getUserDetails = async () => {
         const res = await axios.get("/api/users/me")
@@ -29,7 +18,8 @@ export default function Logout() {
 
     return (
         <div>
-            <button onClick={logout} className={style.button}>Log out</button>
+            <h2>{data === "nothing" ? "nothing" : <Link href={`/profile/${data}`}>{data}</Link>}</h2>
+            <button onClick={getUserDetails} className={style.button}>Get User Details</button>
         </div>
     )
 }
