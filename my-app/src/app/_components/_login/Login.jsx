@@ -1,24 +1,51 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { axios } from "axios";
+import axios from "axios";
 import styles from "./login.module.css";
+import { toast } from "react-hot-toast";
 
 export default function Login() {
+    const router = useRouter();
     const [user, setUser] = React.useState({
         email: "",
         password: "",
     })
 
-    const onLogin = async () => {
+    const [buttonDisabled, setButtonDisabled] = React.useState(false)
+    const [loading, setLoading] = React.useState(false)
 
+    const onLogin = async () => {
+        try {
+            setLoading(true);
+            const response = await axios.post("/api/users/login", user);
+            console.log("Login success", response.data);
+            toast.success("Login success");
+            router.push("/profile")
+
+
+        } catch (error) {
+            console.log("Login failed", error.message);
+            toast.error(error.message)
+        } finally {
+            setLoading(false)
+        }
     }
+
+    useEffect(() => {
+        if (user.email.length > 0 && user.password.length > 0) {
+            setButtonDisabled(false)
+        } else {
+            setButtonDisabled(true)
+        }
+    }, [user])
+
     return (
         <div className={styles.signupContainer}>
             <div className={styles.formContainer}>
-                <h1 className={styles.title}>Login</h1>
+                <h1 className={styles.title}>{loading ? "Checking credentials" : "Log In"}</h1>
                 <div className={styles.inputGroup}>
                     <label className={styles.label} htmlFor="email">Email:</label>
                     <input
@@ -42,7 +69,7 @@ export default function Login() {
                     />
                 </div>
                 <button className={styles.signupButton} onClick={onLogin}>
-                    Login
+                    {buttonDisabled ? "Please enter values" : "Log In"}
                 </button>
                 <div className={styles.loginLink}>
                     Don't have an account? <Link href="/signup">Sign up</Link>

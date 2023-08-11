@@ -1,4 +1,3 @@
-import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import style from "./navbar.module.css";
 import Image from "next/image";
@@ -7,7 +6,6 @@ export default function Navbar() {
   return (
     <div>
       <div className={style.navbar}>
-
         <Link href="/">
           <Image src="/_img/favicon.ico"
             width={40} //180
@@ -22,9 +20,6 @@ export default function Navbar() {
           <Link href="exercises">Exercises</Link>
           <Link href="/contact">Contact</Link>
         </nav>
-        <div className={style.userButton}>
-          <UserButton></UserButton>
-        </div>
       </div>
       <div className={style.navbarLine}></div>
     </div>
