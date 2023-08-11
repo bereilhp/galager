@@ -1,3 +1,4 @@
+import Image from "next/image";
 import StartLearning from "../_startLearning/StartLearning";
 import style from "./learnIntro.module.css";
 
