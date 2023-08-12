@@ -24,7 +24,7 @@ export default function Login() {
             toast.success("Successfully logged in");
             console.log("Login success", response.data);
             setTimeout(() => {
-                router.push("/profile")
+                router.push("/")
                 console.log("Timeout finished!");
             }, 1000);
         } catch (error) {
