@@ -29,7 +29,7 @@ export default function Login() {
             }, 1000);
         } catch (error) {
             console.log("Login failed", error.message);
-            toast.error("This didn't work.")
+            toast.error("Please try again")
         } finally {
             setLoading(false)
         }
@@ -48,7 +48,7 @@ export default function Login() {
         <div className={styles.signupContainer}>
             <Toaster></Toaster>
             <div className={styles.formContainer}>
-                <h1 className={styles.title}>{loading ? "Checking credentials" : "Log In"}</h1>
+                <div className={styles.title}>Login to Galager</div>
                 <div className={styles.inputGroup}>
                     <label className={styles.label} htmlFor="email">Email:</label>
                     <input
@@ -71,8 +71,9 @@ export default function Login() {
                         placeholder="Enter your password"
                     />
                 </div>
+                <div className={styles.pad}></div>
                 <button className={styles.signupButton} onClick={onLogin}>
-                    {buttonDisabled ? "Please enter values" : "Log In"}
+                    {buttonDisabled ? "Login" : "Submit"}
                 </button>
                 <div className={styles.loginLink}>
                     Don't have an account? <Link href="/signup">Sign up</Link>

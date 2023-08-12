@@ -8,8 +8,8 @@ export default function AboutUs() {
         <div className={style.imageContainer}>
           <Image
             src="/_img/aboutUs.png"
-            width={150}
-            height={150}
+            width={60}
+            height={60}
             alt="Group of people working together"
             className={style.image}
           />

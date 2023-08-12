@@ -13,17 +13,19 @@
 
 .formContainer {
     background-color: #fff;
-    border-radius: 5vh;
-    padding: 10vh 7.5vw;
+    border-radius: 2vh;
+    padding: 7vh 4.5vw;
     width: 100%;
     max-width: 25vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.1);
 }
 
 .title {
     font-size: x-large;
     margin-bottom: 2vh;
     text-align: center;
+    color: #252525;
+    font-weight: bold;
 }
 
 .inputGroup {
@@ -34,43 +36,62 @@
     display: block;
     margin-bottom: 1vh;
     font-weight: bold;
+    color: #252525;
 }
 
 .input {
     width: 93%;
-    padding: 1.5vh;
-    border: 1px solid #ccc;
-    border-radius: 2vh;
+    padding: 1.75vh 0.8vw;
+    border: 0.2vh solid #ccc;
+    border-radius: 1vh;
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid #39AA35;
 }
 
 .signupButton {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1vh 2vw;
+    background-color: #39AA35;
+    color: #f5f5f5;
+    padding: 1.75vh 1.75vw;
     border: none;
-    border-radius: 2vh;
+    border-radius: 1vh;
     cursor: pointer;
     width: 100%;
     font-size: large;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 
 .signupButton:hover {
-    background-color: #0056b3;
+    background-color: #009a53;
+}
+
+.signupButton:active {
+    background-color: #39AA35;
 }
 
 .loginLink {
     margin-top: 1.5vh;
     text-align: center;
-    font-size: medium;
+    font-size: small;
 }
 
 .loginLink a {
-    color: #007bff;
+    color: #009a53;
     text-decoration: none;
 }
 
 .loginLink a:hover {
     text-decoration: underline;
+}
+
+.galager {
+    color: #39AA35;
+}
+
+.pad {
+    padding: 0.75vh;
 }
