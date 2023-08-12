@@ -1,4 +1,5 @@
 "use client"
+
 import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -15,7 +16,7 @@ export default function Logout() {
             setTimeout(() => {
                 router.push("/login")
                 console.log("Timeout finished!");
-            }, 3000);
+            }, 2000);
 
         } catch (error) {
             console.log(error.message);
