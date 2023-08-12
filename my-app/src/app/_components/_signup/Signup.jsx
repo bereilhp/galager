@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import styles from "./signup.module.css";
-import { ErrorIcon, toast } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Signup() {
     const router = useRouter();
@@ -26,7 +26,7 @@ export default function Signup() {
 
         } catch (error) {
             console.log("Signup failed", error.message)
-            toast.error(error.message)
+            toast.error("Please try again")
         } finally {
             setLoading(false);
         }
@@ -43,6 +43,7 @@ export default function Signup() {
     }, [user]);
     return (
         <div className={styles.signupContainer}>
+            <Toaster></Toaster>
             <div className={styles.formContainer}>
                 <h1 className={styles.title}>{loading ? "Checking credentials" : "Signup"}</h1>
                 <div className={styles.inputGroup}>
