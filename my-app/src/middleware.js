@@ -8,9 +8,7 @@ export function middleware(req) {
 
     if (isPublicPath && token) {
         return NextResponse.redirect(new URL("/", req.nextUrl))
-    }
-
-    if (!isPublicPath && !token) {
+    } else if (!isPublicPath && !token) {
         return NextResponse.redirect(new URL("/login", req.nextUrl))
     }
 }
@@ -21,6 +19,9 @@ export const config = {
         "/profile",
         "/profile/:path*",
         "/login",
-        "/signup"
+        "/signup",
+        "/courses",
+        "/courses/:path*",
+        "/exercises",
     ]
 }
