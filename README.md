@@ -6,3 +6,4 @@ Node version: v18.16.0
 - Next.js
 - JavaScript
 - MongoDB
+- CSS Modules
