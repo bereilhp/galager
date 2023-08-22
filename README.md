@@ -8,7 +8,7 @@ Node version: v18.16.0
 - MongoDB
 - CSS Modules
 
-## .env.local
+## .env.local (Create the file inside the my-app dir)
 ```
 MONGO_URI=mongoAtlasUri
 TOKEN_SECRET=jwtSecret
