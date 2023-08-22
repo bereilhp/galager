@@ -7,3 +7,9 @@ Node version: v18.16.0
 - JavaScript
 - MongoDB
 - CSS Modules
+
+## .env.local
+```
+MONGO_URI=mongoAtlasUri
+TOKEN_SECRET=jwtSecret
+```
