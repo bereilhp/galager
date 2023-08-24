@@ -13,10 +13,8 @@ export default function Logout() {
         try {
             await axios.get("api/users/logout")
             toast.success("Logout succesfull")
-            setTimeout(() => {
-                router.push("/login")
-                console.log("Timeout finished!");
-            }, 2000);
+            router.push("/login")
+            console.log("Timeout finished!");
 
         } catch (error) {
             console.log(error.message);

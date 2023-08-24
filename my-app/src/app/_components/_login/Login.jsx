@@ -19,14 +19,13 @@ export default function Login() {
 
     const onLogin = async () => {
         try {
-            setLoading(true);
             const response = await axios.post("/api/users/login", user);
             toast.success("Successfully logged in");
             console.log("Login success", response.data);
             setTimeout(() => {
                 router.push("/")
                 console.log("Timeout finished!");
-            }, 2000);
+            }, 2500);
         } catch (error) {
             console.log("Login failed", error.message);
             toast.error("Please try again")
