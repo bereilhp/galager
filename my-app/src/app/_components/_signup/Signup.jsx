@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import axios from "axios";
 import styles from "./signup.module.css";
 import { Toaster, toast } from "react-hot-toast";
+import validator from 'validator';
 
 export default function Signup() {
     const router = useRouter();
@@ -19,15 +20,16 @@ export default function Signup() {
 
     const onSignup = async () => {
         try {
-            setLoading(true);
-            const response = await axios.post("/api/users/signup", user);
-            console.log("Signup success", response.data)
-            toast.success("Successfully signed up");
-            setTimeout(() => {
-                router.push("/login")
-                console.log("Timeout finished!");
-            }, 2000);
-
+            if(validator.isEmail(user.email)){
+                toast.success("Successfully signed up");
+                const response = await axios.post("/api/users/signup", user);
+                console.log("Signup success", response.data)
+                setTimeout(() => {
+                    router.push("/login")
+                    console.log("Timeout finished!");
+                }, 2500);
+            } else toast.error("Enter a valid email")
+    
         } catch (error) {
             console.log("Signup failed", error.message)
             toast.error("Please try again")

@@ -44,6 +44,7 @@
     padding: 1.75vh;
     border: 0.2vh solid #ccc;
     border-radius: 1vh;
+    font-size: small;
 }
 
 .input:focus {
