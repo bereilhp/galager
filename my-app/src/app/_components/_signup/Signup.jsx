@@ -22,7 +22,11 @@ export default function Signup() {
             setLoading(true);
             const response = await axios.post("/api/users/signup", user);
             console.log("Signup success", response.data)
-            router.push("/login")
+            toast.success("Successfully signed up");
+            setTimeout(() => {
+                router.push("/login")
+                console.log("Timeout finished!");
+            }, 2000);
 
         } catch (error) {
             console.log("Signup failed", error.message)
@@ -45,7 +49,7 @@ export default function Signup() {
         <div className={styles.signupContainer}>
             <Toaster></Toaster>
             <div className={styles.formContainer}>
-                <h1 className={styles.title}>{loading ? "Checking credentials" : "Signup"}</h1>
+                <h1 className={styles.title}>Signup to Galager</h1>
                 <div className={styles.inputGroup}>
                     <label className={styles.label} htmlFor="username">Username:</label>
                     <input
@@ -79,6 +83,7 @@ export default function Signup() {
                         placeholder="Enter your password"
                     />
                 </div>
+                <div className={styles.pad}></div>
                 <button className={styles.signupButton} onClick={onSignup}>
                     {buttonDisabled ? "Please enter values" : "Signup"}
                 </button>
