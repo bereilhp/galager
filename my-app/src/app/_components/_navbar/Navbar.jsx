@@ -8,18 +8,22 @@ export default function Navbar() {
       <div className={style.navbar}>
         <Link href="/">
           <Image src="/_img/favicon.ico"
-            width={40} //180
-            height={40} //45
+            width={50} //180
+            height={50} //45
             alt="Galager Logo"
           />
         </Link>
         <nav className={style.navbarLinks}>
           <Link href="/">Home</Link>
-          <Link href="/learn">Learn</Link>
           <Link href="/courses">Courses</Link>
           <Link href="exercises">Exercises</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">About Us</Link>
         </nav>
+        <div className={style.profileLink}>
+          <Link href="/profile">
+            <Image src="/_img/user.png" width={40} height={40} alt="User icon"></Image>
+          </Link>
+        </div>
       </div>
       <div className={style.navbarLine}></div>
     </div>
