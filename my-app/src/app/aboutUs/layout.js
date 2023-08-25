@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'Contact',
+  title: 'About Us',
   description: '',
 }
 
-export default function ContactLayout({ children }) {
+export default function AboutUsLayout({ children }) {
   return (
     <>
       {children}
