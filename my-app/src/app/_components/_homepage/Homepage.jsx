@@ -5,6 +5,7 @@ import AboutUs from "../_aboutUs/AboutUs";
 import MeetTheTeam from "../_meetTheTeam/MeetTheTeam";
 import Pad from "../_pad/Pad";
 import Space from "../_space/Space";
+import ContactUs from "../_contactUs/ContactUs";
 
 export default function Homepage() {
   return (
@@ -15,6 +16,8 @@ export default function Homepage() {
       <OurMission></OurMission>
       <Space></Space>
       <MeetTheTeam></MeetTheTeam>
+      <Space></Space>
+      <ContactUs></ContactUs>
     </div>
   );
 }

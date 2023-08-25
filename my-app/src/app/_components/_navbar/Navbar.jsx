@@ -17,13 +17,11 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/courses">Courses</Link>
           <Link href="exercises">Exercises</Link>
-          <Link href="/contact">About Us</Link>
+          <Link href="/aboutUs">About Us</Link>
         </nav>
-        <div className={style.profileLink}>
-          <Link href="/profile">
-            <Image src="/_img/user.png" width={40} height={40} alt="User icon"></Image>
-          </Link>
-        </div>
+        <Link href="/profile">
+          <Image src="/_img/user.png" width={40} height={40} alt="User icon"></Image>
+        </Link>
       </div>
       <div className={style.navbarLine}></div>
     </div>

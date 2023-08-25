@@ -65,6 +65,10 @@
     transition: background-color 0.3s ease;
 }
 
+.signupButton:focus {
+    outline: none;
+    border: 2px solid #252525;
+}
 
 .signupButton:hover {
     background-color: #009a53;

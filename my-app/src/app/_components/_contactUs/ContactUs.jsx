@@ -1,24 +1,25 @@
 import Image from "next/image";
-import style from "./aboutUs.module.css";
+import style from "./contactUs.module.css";
 
-export default function AboutUs() {
+export default function ContactUs() {
   return (
     <div className={`${style.center} ${style.teamContainer}`}>
       <div className={style.aboutContainer}>
         <div className={style.imageContainer}>
           <Image
-            src="/_img/aboutUs.png"
+            src="/_img/contactUs.svg"
             width={100}
             height={100}
-            alt="Group of people working together"
+            alt="Contact us"
             className={style.image}
           />
         </div>
         <div className={style.textContainer}>
-          <div className={style.title}>About Us</div>
+          <div className={style.title}>Contact Us</div>
           <div className={style.blueLine}></div>
           <div className={style.text}>
-            <span className={style.galager}>Galager</span> is a free and open-source web app dedicated to learning JavaScript.</div>
+            If you have any questions, please contact us at galagerOfficial@proton.me.
+          </div>
         </div>
       </div>
     </div>

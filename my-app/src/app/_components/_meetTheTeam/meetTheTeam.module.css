@@ -10,27 +10,27 @@
     align-items: center;
 }
 
+.imageContainer {
+    margin-right: 2vw;
+}
+
 .title {
-    font-size: 4vh;
+    font-size: x-large;
     font-weight: bold;
-    color: #27374D;
-    margin-bottom: 2vh;
+    color: #252525;
+    margin-bottom: 1vh;
+}
+
+.galager {
+    color: #252525;
+    font-weight: bold;
 }
 
 .blueLine {
     width: 4vw;
-    height: 0.35vh;
-    background-color: #27374D;
-    margin-bottom: 2vh;
-}
-
-.text {
-    color: #000000;
-    font-size: 2.5vh;
-}
-
-.imageContainer {
-    margin-right: 2vw;
+    height: 0.25vh;
+    background-color: #252525;
+    margin-bottom: 1vh;
 }
 
 .image {
@@ -41,6 +41,11 @@
 .textContainer {
     opacity: 0;
     animation: fadeInText 2s forwards;
+}
+
+.text {
+    color: #252525;
+    font-size: large;
 }
 
 @keyframes fadeInImage {
