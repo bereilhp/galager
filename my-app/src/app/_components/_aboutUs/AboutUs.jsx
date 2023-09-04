@@ -18,7 +18,9 @@ export default function AboutUs() {
           <div className={style.title}>About Us</div>
           <div className={style.blueLine}></div>
           <div className={style.text}>
-            <span className={style.galager}>Galager</span> is a free and open-source web app dedicated to learning JavaScript.</div>
+            <span className={style.galager}>Galager</span> is a free and
+            open-source web app dedicated to learning JavaScript.
+          </div>
         </div>
       </div>
     </div>

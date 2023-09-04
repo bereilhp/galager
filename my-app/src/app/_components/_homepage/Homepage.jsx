@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./homepage.module.css";
 import OurMission from "../_ourMission/OurMission";
 import AboutUs from "../_aboutUs/AboutUs";
@@ -10,7 +9,7 @@ import ContactUs from "../_contactUs/ContactUs";
 export default function Homepage() {
   return (
     <div className={style.homepageContainer}>
-      <Pad></Pad>
+      <div className={style.pad}></div>
       <AboutUs></AboutUs>
       <Space></Space>
       <OurMission></OurMission>

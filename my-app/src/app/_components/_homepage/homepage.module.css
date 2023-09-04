@@ -1,6 +1,14 @@
 .homepageContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2vh;
+  flex-direction: column;
+  padding-left: 25vw;
+}
+
+.homepageContainer > * {
+  align-self: self-start;
+  margin-bottom: 1.5vh;
+}
+
+.pad {
+  padding-top: 1.5vh;
 }
