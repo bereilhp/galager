@@ -23,7 +23,6 @@ export default function Navbar() {
           <Image src="/_img/user.png" width={40} height={40} alt="User icon"></Image>
         </Link>
       </div>
-      <div className={style.navbarLine}></div>
     </div>
   );
 }

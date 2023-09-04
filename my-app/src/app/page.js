@@ -1,6 +1,7 @@
 import Navbar from "./_components/_navbar/Navbar";
 import Homepage from "./_components/_homepage/Homepage";
 import FooterFixed from "./_components/_footerFixed/FooterFixed";
+import Footer from "./_components/_footer/Footer";
 
 export default function Home() {
   return (
@@ -8,10 +9,10 @@ export default function Home() {
       <div>
         <Navbar />
       </div>
+      <br></br>
       <div>
-        <Homepage />
       </div>
-      <FooterFixed></FooterFixed>
+      <Footer></Footer>
     </div>
   )
 }
