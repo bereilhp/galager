@@ -9,7 +9,6 @@ import ContactUs from "../_contactUs/ContactUs";
 export default function Homepage() {
   return (
     <div className={style.homepageContainer}>
-      <div className={style.pad}></div>
       <AboutUs></AboutUs>
       <Space></Space>
       <OurMission></OurMission>

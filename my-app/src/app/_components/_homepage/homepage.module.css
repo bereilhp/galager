@@ -1,14 +1,11 @@
 .homepageContainer {
   display: flex;
   flex-direction: column;
-  padding-left: 25vw;
+  padding-left: 22vw;
+  padding-top: 2vh;
 }
 
 .homepageContainer > * {
   align-self: self-start;
   margin-bottom: 1.5vh;
-}
-
-.pad {
-  padding-top: 1.5vh;
 }
