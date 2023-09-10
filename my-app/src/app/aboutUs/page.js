@@ -7,9 +7,9 @@ import Navbar from "../_components/_navbar/Navbar";
 export default function Page() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Homepage></Homepage>
-      <FooterFixed></FooterFixed>
+      <Footer></Footer>
     </div>
-  )
+  );
 }
