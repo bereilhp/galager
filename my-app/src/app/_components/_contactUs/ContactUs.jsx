@@ -8,8 +8,8 @@ export default function ContactUs() {
         <div className={style.imageContainer}>
           <Image
             src="/_img/contactUs.svg"
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             alt="Contact us"
             className={style.image}
           />
@@ -18,7 +18,8 @@ export default function ContactUs() {
           <div className={style.title}>Contact Us</div>
           <div className={style.blueLine}></div>
           <div className={style.text}>
-            If you have any questions, please contact us at galagerOfficial@proton.me.
+            If you have any questions, please contact us at
+            galagerOfficial@proton.me.
           </div>
         </div>
       </div>
