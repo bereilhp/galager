@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
   color: #252525;
   margin-bottom: 1vh;
@@ -31,7 +31,7 @@
 
 .text {
   color: #252525;
-  font-size: large;
+  font-size: x-large;
 }
 
 .imageContainer {
@@ -47,7 +47,6 @@
   opacity: 0;
   animation: fadeInText 2s forwards;
 }
-
 
 @keyframes fadeInImage {
   to {
