@@ -1,7 +1,7 @@
 .homepageContainer {
   display: flex;
   flex-direction: column;
-  padding-left: 15vw;
+  padding-left: 15%;
   padding-top: 2vh;
 }
 
