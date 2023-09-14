@@ -3,6 +3,7 @@
 import style from "./quiz.module.css";
 import { quiz } from "../../_data/basic";
 import { useState } from "react";
+import Confetti from "react-confetti";
 
 export default function Quiz() {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -89,6 +90,7 @@ export default function Quiz() {
           </div>
         ) : (
           <div>
+            <Confetti></Confetti>
             <h3>Results</h3>
             <h3>Overall {(result.score / 25) * 100}%</h3>
             <p>
