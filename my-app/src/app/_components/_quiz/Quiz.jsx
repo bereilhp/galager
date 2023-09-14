@@ -100,7 +100,7 @@ export default function Quiz() {
               Total Score: <span>{result.score}</span>
             </p>
             <p>
-              Correct Answers: <span>{result.correctAnswers}</span>
+              Correct Answers: <span>{result.correctedAnswers}</span>
             </p>
             <p>
               Wrong Answers: <span>{result.wrongAnswers}</span>
