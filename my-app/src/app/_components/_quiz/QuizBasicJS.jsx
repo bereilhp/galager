@@ -2,16 +2,18 @@
 
 import style from "./quiz.module.css";
 import { quiz } from "../../_data/basic";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
+import axios from "axios";
 
-export default function Quiz() {
+export default function QuizBasicJS() {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [result, setResult] = useState({
+    title: "Easy JavaScript Quiz",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
@@ -19,6 +21,12 @@ export default function Quiz() {
 
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
+
+  useEffect(() => {
+    if (showResult) {
+      sendQuizData(); // Call sendQuizData when showResult is true
+    }
+  }, [showResult]);
 
   //Select and check ans
   const onAnswerSelected = (answer, idx) => {
@@ -53,6 +61,21 @@ export default function Quiz() {
     }
 
     setChecked(false);
+  };
+
+  const sendQuizData = async () => {
+    try {
+      const res = await axios.get("/api/users/me");
+      if (showResult) {
+        const response = await axios.post("/api/quiz/result", {
+          username: res.data.data.username,
+          quizName: result.title,
+          result: (result.score / 25) * 100,
+        });
+      }
+    } catch (error) {
+      console.log("Send data failed", error.message);
+    }
   };
 
   return (
