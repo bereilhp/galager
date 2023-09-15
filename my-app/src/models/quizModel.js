@@ -6,6 +6,6 @@ const quizSchema = new mongoose.Schema({
   result: Number,
 });
 
-const Quiz = mongoose.model.quizzes || mongoose.model("quizzes", quizSchema);
+const Quiz = mongoose.models.quizzes || mongoose.model("quizzes", quizSchema);
 
 export default Quiz;
