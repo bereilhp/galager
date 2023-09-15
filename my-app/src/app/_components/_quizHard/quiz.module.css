@@ -1,0 +1,66 @@
+.global {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.list {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 9px 0;
+  padding: 16px 8px;
+  color: #000105;
+  border: 1px solid lightgray;
+}
+
+.listHover {
+  background-color: #d8d8d8;
+  columns: #fff;
+}
+
+.listSelected {
+  background-color: #39aa35;
+}
+.btn {
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #009a53;
+}
+
+.btn:active {
+  background-color: #39aa35;
+}
+
+.container {
+  max-width: 740px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.quizContainer {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.container p {
+  padding: 8px 0;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Quizzes",
+  title: "Medium Quiz",
   description: "",
 };
 
-export default function QuizLayout({ children }) {
+export default function MediumLayout({ children }) {
   return <>{children}</>;
 }
