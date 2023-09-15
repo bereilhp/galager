@@ -23,13 +23,19 @@ export default function GetQuizScore() {
   return (
     <div>
       <h2>Highest Quiz Scores:</h2>
-      <ul>
-        {scores.map((score) => (
-          <li key={score._id}>
-            {score._id} with score {score.highestScore}%
-          </li>
-        ))}
-      </ul>
+      {scores.length > 0 ? (
+        <ul>
+          {scores.map((score) => (
+            <li key={score._id}>
+              {score._id} with score {score.highestScore}%
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul>
+          <li>No quiz scores available</li>
+        </ul>
+      )}
     </div>
   );
 }
