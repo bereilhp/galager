@@ -6,12 +6,35 @@ connect();
 
 export async function GET(req) {
   try {
-    const quizScore = await Quiz.findOne({
-      username: "test",
-    }).sort({ result: -1 });
+    const quizScores = await Quiz.aggregate([
+      {
+        $match: {
+          username: "test",
+        },
+      },
+      {
+        $sort: {
+          result: -1,
+        },
+      },
+      {
+        $group: {
+          _id: "$quizName",
+          highestScore: {
+            $first: "$result",
+          },
+        },
+      },
+      {
+        $sort: {
+          highestScore: -1,
+        },
+      },
+    ]);
+    //console.log(quizScores);
     return NextResponse.json({
       message: "Score Found",
-      data: quizScore,
+      data: quizScores,
     });
   } catch (error) {
     return NextResponse.json({ error: error.message }, { status: 400 });
