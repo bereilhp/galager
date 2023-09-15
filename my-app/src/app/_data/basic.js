@@ -3,43 +3,33 @@ export const quiz = {
   questions: [
     {
       id: 1,
-      question: "What does CSS stand for?",
-      answers: [
-        "Computer Science Society",
-        "Cascading Style Sheets",
-        "Creative Style System",
-        "Coding Style Specification",
-      ],
-      correctAnswer: "Cascading Style Sheets",
-    },
-    {
-      id: 2,
       question: "Which of these is a programming language?",
       answers: ["Banana", "Carrot", "JavaScript", "Potato"],
       correctAnswer: "JavaScript",
     },
     {
-      id: 3,
-      question: "What does HTML stand for?",
-      answers: [
-        "HyperText Markup Language",
-        "Highway Traffic Management League",
-        "Hot Tamale Making Lab",
-        "Hippopotamus Training Manual",
-      ],
-      correctAnswer: "HyperText Markup Language",
+      id: 2,
+      question: "What is the JavaScript file extension?",
+      answers: [".html", ".css", ".js", ".txt"],
+      correctAnswer: ".js",
     },
     {
-      id: 4,
+      id: 3,
       question: "Who created JavaScript?",
       answers: ["Steve Jobs", "Elon Musk", "Mark Zuckerberg", "Brendan Eich"],
       correctAnswer: "Brendan Eich",
     },
     {
+      id: 4,
+      question: "When did JavaScript first appeared?",
+      answers: ["December 4, 1995", "Today", "Yesterday", "Tomorrow"],
+      correctAnswer: "December 4, 1995",
+    },
+    {
       id: 5,
-      question: "Which symbol is used for single-line comments in JavaScript?",
-      answers: ["//", "/*", "*/", "#"],
-      correctAnswer: "//",
+      question: "Are Java and Javascript the same?",
+      answers: ["Yes", "Absolutely", "Without a doubt", "NOOOOOOO"],
+      correctAnswer: "NOOOOOOO",
     },
   ],
 };

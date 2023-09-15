@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Quizzes",
+  title: "Hard Quiz",
   description: "",
 };
 
-export default function QuizLayout({ children }) {
+export default function HardLayout({ children }) {
   return <>{children}</>;
 }

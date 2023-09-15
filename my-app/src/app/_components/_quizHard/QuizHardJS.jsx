@@ -1,19 +1,19 @@
 "use client";
 
 import style from "./quiz.module.css";
-import { quiz } from "../../_data/basic";
+import { quiz } from "../../_data/hard";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import axios from "axios";
 
-export default function QuizBasicJS() {
+export default function QuizHardJS() {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [result, setResult] = useState({
-    title: "Easy JavaScript Quiz",
+    title: "Hard JavaScript Quiz",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,

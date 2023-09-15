@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Quizzes",
+  title: "Easy Quiz",
   description: "",
 };
 
-export default function QuizLayout({ children }) {
+export default function EasyLayout({ children }) {
   return <>{children}</>;
 }
