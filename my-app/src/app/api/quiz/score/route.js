@@ -6,10 +6,12 @@ connect();
 
 export async function GET(req) {
   try {
+    //const user = await axios.get("/api/users/me");
+    //const un = user.data.data.username;
     const quizScores = await Quiz.aggregate([
       {
         $match: {
-          username: "test",
+          username: "test", //un,
         },
       },
       {
