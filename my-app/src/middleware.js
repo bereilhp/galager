@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
 
 export function middleware(req) {
   const path = req.nextUrl.pathname;
