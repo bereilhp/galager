@@ -11,7 +11,7 @@ export async function GET(req) {
     const quizScores = await Quiz.aggregate([
       {
         $match: {
-          username: "test", //un,
+          username: "test2", //un,
         },
       },
       {
