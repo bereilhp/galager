@@ -5,9 +5,11 @@ Node version: v18.16.0
 ## Tech Stack
 
 - Next.js
+- Node.js
 - JavaScript
 - MongoDB
 - MongoDB Atlas
+- CSS
 - CSS Modules
 
 ## .env.local (Create the file inside the my-app directory)
