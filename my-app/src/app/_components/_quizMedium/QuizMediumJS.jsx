@@ -81,13 +81,13 @@ export default function QuizMediumJS() {
   return (
     <div className={`${style.global} ${style.container}`}>
       <h1 className={style.center}>{result.title}</h1>
-      <h2 className={style.center}>
-        Question {activeQuestion + 1}
-        <span>/{questions.length}</span>
-      </h2>
       <div>
         {!showResult ? (
           <div className={style.quizContainer}>
+            <h2 className={style.center}>
+              Question {activeQuestion + 1}
+              <span>/{questions.length}</span>
+            </h2>
             <h3>{questions[activeQuestion].question}</h3>
             {answers.map((answer, idx) => (
               <li

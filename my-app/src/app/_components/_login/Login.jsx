@@ -21,13 +21,15 @@ export default function Login() {
   const onLogin = async () => {
     try {
       if (validator.isEmail(user.email)) {
-        toast.success("Successfully logged in");
         const response = await axios.post("/api/users/login", user);
-        console.log("Login success", response.data);
-        setTimeout(() => {
-          router.push("/");
-          console.log("Timeout finished!");
-        }, 2500);
+        if (response.status === 200) {
+          toast.success("Successfully logged in");
+          console.log("Login success", response.data);
+          setTimeout(() => {
+            router.push("/");
+            console.log("Timeout finished!");
+          }, 2500);
+        }
       } else toast.error("Enter a valid email");
     } catch (error) {
       console.log("Login failed", error.message);
