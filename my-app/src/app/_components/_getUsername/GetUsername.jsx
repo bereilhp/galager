@@ -15,7 +15,6 @@ export default function GetUsername() {
         console.error("Error fetching user data:", error);
       }
     };
-
     getUserDetails();
   }, []);
 
