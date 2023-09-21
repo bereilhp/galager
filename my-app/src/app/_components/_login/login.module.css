@@ -1,98 +1,107 @@
 .signupContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-}
-
-.flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  overflow: hidden;
 }
 
 .formContainer {
-    background-color: #fff;
-    border-radius: 2vh;
-    padding: 7vh 4.5vw;
-    width: 100%;
-    max-width: 25vw;
-    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 2vh;
+  padding: 5vh 4.5vw;
+  width: 100%;
+  max-width: 25vw;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.1);
 }
 
 .title {
-    font-size: x-large;
-    margin-bottom: 2vh;
-    text-align: center;
-    color: #252525;
-    font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 2vh;
+  text-align: center;
+  color: #252525;
+  font-weight: bold;
 }
 
 .inputGroup {
-    margin-bottom: 2vh;
+  margin-bottom: 2vh;
 }
 
 .label {
-    display: block;
-    margin-bottom: 1vh;
-    font-weight: bold;
-    color: #252525;
+  display: block;
+  margin-bottom: 1vh;
+  font-weight: bold;
+  color: #252525;
 }
 
 .input {
-    width: 93%;
-    padding: 1.75vh 0.8vw;
-    border: 0.2vh solid #ccc;
-    border-radius: 1vh;
-    font-size: small;
+  width: 100%;
+  padding: 1.75vh 0.8vw;
+  border: 0.2vh solid #ccc;
+  border-radius: 1vh;
+  font-size: small;
 }
 
 .input:focus {
-    outline: none;
-    border: 2px solid #39AA35;
+  outline: none;
+  border: 2px solid #39aa35;
 }
 
 .signupButton {
-    background-color: #39AA35;
-    color: #f5f5f5;
-    padding: 1.75vh 1.75vw;
-    border: none;
-    border-radius: 1vh;
-    cursor: pointer;
-    width: 100%;
-    font-size: large;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-
 .signupButton:hover {
-    background-color: #009a53;
+  background-color: #009a53;
 }
 
 .signupButton:active {
-    background-color: #39AA35;
+  background-color: #39aa35;
 }
 
 .loginLink {
-    margin-top: 1.5vh;
-    text-align: center;
-    font-size: small;
+  margin-top: 1.5vh;
+  text-align: center;
+  font-size: small;
 }
 
 .loginLink a {
-    color: #009a53;
-    text-decoration: none;
+  color: #009a53;
+  text-decoration: none;
 }
 
 .loginLink a:hover {
-    text-decoration: underline;
-}
-
-.galager {
-    color: #39AA35;
+  text-decoration: underline;
 }
 
 .pad {
-    padding: 0.75vh;
+  padding: 0.75vh;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .signupContainer {
+    min-height: 90vh;
+  }
+
+  .formContainer {
+    max-width: 90%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .signupButton {
+    width: 100%;
+  }
 }
