@@ -1,5 +1,3 @@
-import Contact from "../_components/_contact/Contact";
-import FooterFixed from "../_components/_footerFixed/FooterFixed";
 import Footer from "../_components/_footer/Footer";
 import Homepage from "../_components/_homepage/Homepage";
 import Navbar from "../_components/_navbar/Navbar";
