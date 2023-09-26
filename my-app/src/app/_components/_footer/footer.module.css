@@ -38,3 +38,21 @@
   padding-left: 2vh;
   padding-right: 1vh;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 1vh;
+  }
+
+  .copyright {
+    font-size: small;
+  }
+
+  .footer nav {
+    gap: 1vw;
+  }
+
+  .footer nav a {
+    font-size: small;
+  }
+}
