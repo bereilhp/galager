@@ -1,20 +1,21 @@
 .button {
-  display: inline-block;
-  padding: 1.5vh 1.75vw;
-  background-color: #27374D;
-  color: #fff;
-  text-decoration: none;
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
   border: none;
-  font-size: medium;
-  border-radius: 3vh;
+  border-radius: 1vh;
   cursor: pointer;
-  transition: background-color 0.3s;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #172335;
+  background-color: #009a53;
 }
 
 .button:active {
-  background-color: #27374D;
+  background-color: #39aa35;
 }
