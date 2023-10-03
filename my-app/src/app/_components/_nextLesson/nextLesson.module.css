@@ -1,39 +1,42 @@
 .lessonButtons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2vh 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 2vw;
 }
 
 .backButton,
 .nextButton {
-    display: inline-block;
-    padding: 1.5vh 1.75vw;
-    background-color: #27374D;
-    text-decoration: none;
-    border: none;
-    font-size: medium;
-    border-radius: 3vh;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  width: 12vw;
+  text-align: center;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .backButton {
-    color: #DDE6ED;
-    margin-right: 2vw;
+  color: #f5f5f5;
+  margin-right: 2vw;
 }
 
 .nextButton {
-    color: #DDE6ED;
-    margin-left: 2vw;
+  color: #f5f5f5;
+  margin-left: 2vw;
 }
 
 .backButton:hover,
 .nextButton:hover {
-    background-color: #172335;
+  background-color: #009a53;
 }
 
 .backButton:active,
 .nextButton:active {
-    background-color: #27374D;
+  background-color: #39aa35;
 }
