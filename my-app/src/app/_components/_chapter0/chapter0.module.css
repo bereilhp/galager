@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  font-size: xxx-large;
+  padding: 2vh 2vw;
+  text-shadow: 3px 3px 20px #252525, -2px 1px 30px #252525;
+}
+
+.text {
+  padding: 1vh 1vw;
+  font-size: large;
+}
+
+.pad {
+  padding-top: 80vh;
+}
