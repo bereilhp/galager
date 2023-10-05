@@ -1,0 +1,15 @@
+.center {
+  text-align: center;
+  font-size: xxx-large;
+  margin-bottom: 1vh;
+}
+
+.introText {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.featureList {
+  list-style-type: disc;
+  margin-left: 20px;
+}
