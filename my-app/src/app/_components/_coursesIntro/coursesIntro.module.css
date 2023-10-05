@@ -1,0 +1,70 @@
+/* coursesIntro.module.css */
+
+.introContainer {
+  text-align: center;
+}
+
+.pad {
+  padding: 2vh 2vw;
+}
+
+.center {
+  text-align: center;
+  font-size: xxx-large;
+  margin-bottom: 1vh;
+}
+
+.introText {
+  font-size: large;
+  margin-bottom: 2vh;
+}
+
+.courseList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top: 2vh;
+}
+
+.courseCard {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  padding: 1vh 1vw;
+  text-align: center;
+  box-shadow: 0 0.2vh 0.1vw #252525;
+}
+
+.courseCard h3 {
+  font-size: x-large;
+  margin-bottom: 1vh;
+}
+
+.courseCard p {
+  font-size: large;
+  margin-bottom: 1vh;
+}
+
+.button {
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #009a53;
+}
+
+.button:active {
+  background-color: #39aa35;
+}
