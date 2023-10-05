@@ -2,7 +2,7 @@
   top: 0;
   z-index: 999;
   background-color: #f5f5f5;
-  padding: 1vh;
+  padding: 0.6vh;
   display: flex;
   border-bottom: 0.3vh solid #252525;
   justify-content: space-between;
