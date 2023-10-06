@@ -5,7 +5,7 @@ export default function QuizBtn() {
   return (
     <div>
       <Link href="/exercises/quiz" className={style.button}>
-        JavaScript Course
+        JavaScript Quizzes
       </Link>
     </div>
   );

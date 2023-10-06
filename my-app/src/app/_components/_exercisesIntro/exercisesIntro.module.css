@@ -1,21 +1,40 @@
 .center {
   text-align: center;
-  margin-bottom: 1vh;
 }
 
 .introText {
   font-size: large;
+  margin-bottom: 2vh;
 }
 
-.missionText {
-  font-size: large;
+.exerciseList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
 }
 
-.startOptions {
+.exerciseCard {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  padding: 0vh 1vw;
   text-align: center;
+  box-shadow: 0 0.2vh 0.1vw #252525;
 }
+
+.exerciseCard h3 {
+  font-size: x-large;
+  margin-bottom: 1vh;
+}
+
 .pad {
-  padding: 2vh 1vw;
+  padding: 2vh 2vw;
+}
+.exerciseCard p {
+  font-size: large;
+  margin-bottom: 1vh;
 }
 
 .button {
