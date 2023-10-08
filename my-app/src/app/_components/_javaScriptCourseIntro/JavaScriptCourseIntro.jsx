@@ -13,12 +13,6 @@ export default function JavaScriptCourseIntro() {
         JavaScript! Whether you're new to coding or looking to strengthen your
         foundational skills, this course is the perfect starting point.
       </p>
-      <Image
-        src="/_img/JavaScript-logo.png"
-        alt="JavaScript Logo"
-        width={200}
-        height={200}
-      />
       <p className={style.introText}>In this course, you'll:</p>
       <ul className={style.featureList}>
         <li>Learn the fundamental concepts of programming.</li>
@@ -30,6 +24,7 @@ export default function JavaScriptCourseIntro() {
         Lets stop wasting time and get right to it! Click Chapter 0 to start
         your journey
       </p>
+      <Pad></Pad>
     </div>
   );
 }

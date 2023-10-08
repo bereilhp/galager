@@ -18,6 +18,10 @@
   padding: 2vh 1vw;
 }
 
+.padStart {
+  padding: 0.75vh 1vw;
+}
+
 .button {
   background-color: #39aa35;
   color: #f5f5f5;
