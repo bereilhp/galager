@@ -20,8 +20,10 @@ export default function HomeScreen() {
         </span>
         .
       </p>
+      <Pad></Pad>
       <div className={style.startOptions}>
-        <p>Where would you like to start?</p>
+        <p className={style.missionText}>Where would you like to start?</p>
+        <div className={style.padStart}></div>
         <Link href="/courses/" className={style.button}>
           Courses
         </Link>

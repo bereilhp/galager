@@ -22,7 +22,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2vw;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .courseCard {
@@ -35,6 +35,12 @@
   box-shadow: 0 0.2vh 0.1vw #252525;
 }
 
+.courseCards {
+  border: 0.5vh solid black;
+  width: 70%;
+  margin: auto;
+}
+
 .courseCard h3 {
   font-size: x-large;
   margin-bottom: 1vh;
@@ -42,7 +48,16 @@
 
 .courseCard p {
   font-size: large;
+
   margin-bottom: 1vh;
+}
+
+.padCard {
+  padding: 2vh 2vw;
+}
+
+.padTitle {
+  padding: 1vh 2vw;
 }
 
 .button {

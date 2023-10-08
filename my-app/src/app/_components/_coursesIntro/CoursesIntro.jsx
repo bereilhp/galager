@@ -10,16 +10,8 @@ const courses = [
     description: "The fundamentals",
     link: "/courses/javascript",
     image: "/_img/JavaScript-logo.png",
-    imageWidth: 120,
-    imageHeight: 110,
-  },
-  {
-    title: "Node.js Course",
-    description: "Coming Soon!!",
-    link: "/courses/javascript",
-    image: "/_img/Node.js_logo.svg",
     imageWidth: 160,
-    imageHeight: 110,
+    imageHeight: 160,
   },
 ];
 
@@ -30,21 +22,16 @@ export default function CoursesIntro() {
       <p className={style.introText}>
         Welcome to Galager Courses, your gateway to mastering JavaScript!
       </p>
-      <Image
-        src="/_img/JavaScript-logo.png"
-        alt="JavaScript Courses"
-        width={200}
-        height={200}
-      />
       <p className={style.introText}>
         Whether you're a beginner or an experienced developer, our collection of
         free JavaScript courses will help you expand your knowledge and skills.
       </p>
-
-      <div className={style.courseList}>
+      <div className={style.padCard}></div>
+      <div>
         {courses.map((course, index) => (
-          <div key={index} className={style.courseCard}>
+          <div key={index} className={style.courseCards}>
             <h3>{course.title}</h3>
+            <div className={style.padTitle}></div>
             <Image
               src={course.image}
               alt="Course Image"
