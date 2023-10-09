@@ -10,6 +10,7 @@ export default function GetUsername() {
     const getUserDetails = async () => {
       try {
         const res = await axios.get("/api/users/me");
+        //console.log(res, res.data.data.username);
         setData(res.data.data.username);
       } catch (error) {
         console.error("Error fetching user data:", error);

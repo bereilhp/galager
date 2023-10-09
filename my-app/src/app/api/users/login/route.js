@@ -46,7 +46,11 @@ export async function POST(req, res) {
       success: true,
     });
 
-    response.cookies.set("token", token, { httpOnly: true });
+    response.cookies.set("token", token, {
+      httpOnly: true,
+      sameSite: "None",
+      secure: true,
+    });
 
     return response;
   } catch (error) {
