@@ -33,7 +33,12 @@
   margin-bottom: 1vh;
 }
 
-.image {
+.text {
+  color: #252525;
+  font-size: x-large;
+}
+
+/*.image {
   opacity: 0;
   animation: fadeInImage 2s forwards;
 }
@@ -41,11 +46,6 @@
 .textContainer {
   opacity: 0;
   animation: fadeInText 2s forwards;
-}
-
-.text {
-  color: #252525;
-  font-size: x-large;
 }
 
 @keyframes fadeInImage {
@@ -58,4 +58,4 @@
   to {
     opacity: 1;
   }
-}
+}*/
