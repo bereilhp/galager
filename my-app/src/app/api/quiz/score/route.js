@@ -1,17 +1,20 @@
 import { NextResponse, NextRequest } from "next/server";
 import Quiz from "@/src/models/quizModel";
 import { connect } from "@/src/db/config";
+import { getDataToken } from "@/src/helpers/getDataToken";
+import User from "@/src/models/userModel";
 
 connect();
 
 export async function GET(req) {
   try {
-    //const user = await axios.get("/api/users/me");
-    //const un = user.data.data.username;
+    const userId = await getDataToken(req);
+    const user = await User.findOne({ _id: userId }).select("username");
+    //console.log(user.username);
     const quizScores = await Quiz.aggregate([
       {
         $match: {
-          username: "test2", //un,
+          username: user.username,
         },
       },
       {
