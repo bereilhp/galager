@@ -38,7 +38,7 @@
   margin-right: 2vw;
 }
 
-.image {
+/*.image {
   opacity: 0;
   animation: fadeInImage 2s forwards;
 }
@@ -58,4 +58,4 @@
   to {
     opacity: 1;
   }
-}
+}*/
