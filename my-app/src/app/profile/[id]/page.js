@@ -6,7 +6,6 @@ export default function UserProfile({ params }) {
     <div>
       <h1>
         Profile <span>{params.id}</span>
-        <GetUsername></GetUsername>
       </h1>
     </div>
   );

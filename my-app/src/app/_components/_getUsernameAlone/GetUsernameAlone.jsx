@@ -2,9 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import style from "./getUsername.module.css";
 
-export default function GetUsername() {
+export default function GetUsernameAlone() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function GetUsername() {
 
   return (
     <div>
-      <h1 className={style.center}>Welcome {data}</h1>
+      <h2>User: {data}</h2>
     </div>
   );
 }
