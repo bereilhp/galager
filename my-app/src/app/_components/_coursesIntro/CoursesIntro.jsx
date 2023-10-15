@@ -7,11 +7,12 @@ import Pad from "../_pad/Pad";
 const courses = [
   {
     title: "JavaScript Course",
-    description: "The fundamentals",
+    description:
+      'This course is a great starting point to learn "The fundamentals".',
     link: "/courses/javascript",
     image: "/_img/JavaScript-logo.png",
-    imageWidth: 160,
-    imageHeight: 160,
+    imageWidth: 180,
+    imageHeight: 180,
   },
 ];
 
@@ -38,7 +39,7 @@ export default function CoursesIntro() {
               width={course.imageWidth}
               height={course.imageHeight}
             ></Image>
-            <p>"{course.description}"</p>
+            <p>{course.description}</p>
             <br />
             <Link href={course.link} className={style.button}>
               Learn Now

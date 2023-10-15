@@ -36,9 +36,24 @@
 }
 
 .courseCards {
-  border: 0.5vh solid black;
-  width: 70%;
+  border: 0.15vh solid #252525;
+  width: 40%;
   margin: auto;
+  background-color: #f5f5f5;
+  border-radius: 1vh;
+  box-shadow: 0 0.2vh 0.1vw #252525;
+  padding: 0.25vh 0.25vw;
+  margin-bottom: 2vh;
+}
+
+.courseCards h3 {
+  font-size: x-large;
+  margin-bottom: 1vh;
+}
+
+.courseCards p {
+  font-size: large;
+  margin-bottom: 1vh;
 }
 
 .courseCard h3 {
@@ -48,7 +63,6 @@
 
 .courseCard p {
   font-size: large;
-
   margin-bottom: 1vh;
 }
 
