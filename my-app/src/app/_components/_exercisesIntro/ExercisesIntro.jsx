@@ -14,7 +14,7 @@ const exercises = [
     title: "Fill in the Blank",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-    link: "/exercises/fill-the-blank/",
+    link: "/exercises/fillTheBlank/",
     button: "Check it out",
   },
   {

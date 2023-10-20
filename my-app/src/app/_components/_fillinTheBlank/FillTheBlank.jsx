@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Confetti from "react-confetti";
 import style from "./fillTheBlank.module.css";
-import { fillTheBlank } from "../../_data/fill-the-blank";
+import { fillTheBlank } from "../../_data/_fillTheBlank/fill-the-blank";
 
 export default function FillTheBlank() {
   const [activeQuestion, setActiveQuestion] = useState(0);
