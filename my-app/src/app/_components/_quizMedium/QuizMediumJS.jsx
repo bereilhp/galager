@@ -1,7 +1,7 @@
 "use client";
 
 import style from "./quiz.module.css";
-import { quiz } from "../../_data/medium";
+import { quiz } from "../../_data/_quiz/medium";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import axios from "axios";
