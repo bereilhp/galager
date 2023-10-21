@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import style from "./fillTheBlank.module.css";
 import { fillTheBlank } from "../../_data/_fillTheBlank/fill-the-blank";
+import axios from "axios";
 
 export default function FillTheBlank() {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -14,11 +15,17 @@ export default function FillTheBlank() {
   const { question, correctAnswer } = questions[activeQuestion];
 
   const [result, setResult] = useState({
-    title: "Fill in the blank",
+    title: "Basic Fill in the Blank",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
   });
+
+  useEffect(() => {
+    if (showResult) {
+      sendFillTheBlankData(); // Call sendFillTheBlankData when showResult is true
+    }
+  }, [showResult]);
 
   const nextQuestion = () => {
     if (selectedAnswer.toLowerCase().trim() === correctAnswer) {
@@ -42,6 +49,20 @@ export default function FillTheBlank() {
     setSelectedAnswer(""); // Clear the input field
   };
 
+  const sendFillTheBlankData = async () => {
+    try {
+      const res = await axios.get("/api/users/me");
+      if (showResult) {
+        const response = await axios.post("/api/fillTheBlank/result", {
+          username: res.data.data.username,
+          fillTheBlankExerciseName: result.title,
+          result: (result.score / 25) * 100,
+        });
+      }
+    } catch (error) {
+      console.log("Send data failed", error.message);
+    }
+  };
   return (
     <div className={`${style.global} ${style.container}`}>
       <h1 className={style.center}>{result.title}</h1>
