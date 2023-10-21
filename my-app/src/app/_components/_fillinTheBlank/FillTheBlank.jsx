@@ -15,7 +15,7 @@ export default function FillTheBlank() {
   const { question, correctAnswer } = questions[activeQuestion];
 
   const [result, setResult] = useState({
-    title: "Basic Fill in the Blank",
+    title: "Easy Fill in the Blank",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
