@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Fill in the Blank Exercises",
+  title: "Hard Fill in the Blank",
   description: "",
 };
 

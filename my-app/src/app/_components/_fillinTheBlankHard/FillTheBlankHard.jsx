@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import style from "./fillTheBlank.module.css";
-import { fillTheBlank } from "../../_data/_fillTheBlank/easy";
+import { fillTheBlank } from "../../_data/_fillTheBlank/hard";
 import axios from "axios";
 
-export default function FillTheBlank() {
+export default function FillTheBlankHard() {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
@@ -15,7 +15,7 @@ export default function FillTheBlank() {
   const { question, correctAnswer } = questions[activeQuestion];
 
   const [result, setResult] = useState({
-    title: "Easy JavaScript Fill in the Blank",
+    title: "Hard JavaScript Fill in the Blank",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
