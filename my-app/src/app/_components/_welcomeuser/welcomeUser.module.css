@@ -1,0 +1,94 @@
+.heroSection {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.heroSection .heroSectionWrapper {
+  height: 400px;
+  overflow-x: hidden;
+  width: 1440px;
+}
+
+.heroSection .overlapWrapper {
+  height: 400px;
+  width: 1444px;
+}
+
+.heroSection .overlap {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.66) 100%
+  );
+  height: 400px;
+  position: relative;
+  width: 1440px;
+}
+
+.heroSection .jsLogo {
+  height: 300px;
+  left: 180px;
+  position: absolute;
+  top: 50px;
+  width: 530px;
+}
+
+.heroSection .textWrapper {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 764px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 102px;
+}
+
+.heroSection .div {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  left: 764px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 146px;
+  width: 440px;
+}
+
+.heroSection .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 42px;
+  left: 764px;
+  position: absolute;
+  top: 272px;
+  width: 190px;
+}
+
+.heroSection .overlapGroup {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 42px;
+  position: relative;
+  width: 188px;
+}
+
+.heroSection .textWrapper2 {
+  color: #252525;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 31px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 9px;
+  width: 126px;
+}
