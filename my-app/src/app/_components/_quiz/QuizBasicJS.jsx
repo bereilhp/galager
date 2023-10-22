@@ -5,6 +5,7 @@ import { quiz } from "../../_data/_quiz/easy";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import axios from "axios";
+import CongratsPopUp from "../_congratsPopUp/CongratsPopUp";
 
 export default function QuizBasicJS() {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -12,6 +13,7 @@ export default function QuizBasicJS() {
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [showCongrats, setShowCongrats] = useState(true);
   const [result, setResult] = useState({
     title: "Easy JavaScript Quiz",
     score: 0,
@@ -21,6 +23,12 @@ export default function QuizBasicJS() {
 
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
+
+  const badge = "badge.png";
+
+  const closeCongrats = () => {
+    setShowCongrats(false);
+  };
 
   useEffect(() => {
     if (showResult) {
@@ -114,6 +122,14 @@ export default function QuizBasicJS() {
         ) : (
           <div>
             <Confetti></Confetti>
+            {showCongrats ? (
+              <CongratsPopUp
+                title={result.title}
+                badgeImage={badge}
+                onClose={closeCongrats}
+              ></CongratsPopUp>
+            ) : null}
+
             <h3>Results</h3>
             <h3>Overall {(result.score / 25) * 100}%</h3>
             <p>
