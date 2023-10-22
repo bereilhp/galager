@@ -7,20 +7,17 @@ const quizLevels = [
   {
     slug: "easy",
     title: "Easy JavaScript Quiz",
-    description:
-      "This JavaScript quiz offers a beginner-friendly experience with a low level of challenge, making it accessible for all skill levels.",
+    description: "Appropriate for beginner-level learners.",
   },
   {
     slug: "medium",
     title: "Medium JavaScript Quiz",
-    description:
-      "This JavaScript quiz offers a balanced challenge suitable for individuals looking for a moderate level of difficulty",
+    description: "Appropriate for intermediate-level learners.",
   },
   {
     slug: "hard",
     title: "Hard JavaScript Quiz",
-    description:
-      "This JavaScript Quiz presents a formidable challenge tailored for more experienced individuals seeking a demanding and engaging experience.",
+    description: "Appropriate for advanced-level learners.",
   },
 ];
 
