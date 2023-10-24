@@ -1,0 +1,25 @@
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vh;
+  padding: 1vh 1vw;
+  border: 1vh solid #252525;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 0.2vh;
+}
+
+.text {
+  text-align: center;
+  font-size: large;
+}
