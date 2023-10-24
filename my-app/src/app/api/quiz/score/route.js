@@ -28,6 +28,9 @@ export async function GET(req) {
           highestScore: {
             $first: "$result",
           },
+          badge: {
+            $first: "$badge",
+          },
         },
       },
       {

@@ -7,13 +7,14 @@ connect();
 export async function POST(req, res) {
   try {
     const reqBody = await req.json();
-    const { username, quizName, result } = reqBody;
+    const { username, quizName, result, badge } = reqBody;
     console.log(reqBody);
 
     const quiz = new Quiz({
       username,
       quizName,
       result,
+      badge,
     });
 
     const savedQuiz = await quiz.save();

@@ -5,6 +5,7 @@ import { quiz } from "../../_data/_quiz/medium";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import axios from "axios";
+import CongratsPopUp from "../_congratsPopUp/CongratsPopUp";
 
 export default function QuizMediumJS() {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -12,6 +13,7 @@ export default function QuizMediumJS() {
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [showCongrats, setShowCongrats] = useState(true);
   const [result, setResult] = useState({
     title: "Medium JavaScript Quiz",
     score: 0,
@@ -21,6 +23,12 @@ export default function QuizMediumJS() {
 
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
+
+  const badge = "/_img/badge.png";
+
+  const closeCongrats = () => {
+    setShowCongrats(false);
+  };
 
   useEffect(() => {
     if (showResult) {
@@ -71,6 +79,7 @@ export default function QuizMediumJS() {
           username: res.data.data.username,
           quizName: result.title,
           result: (result.score / 25) * 100,
+          badge: badge,
         });
       }
     } catch (error) {
@@ -114,6 +123,14 @@ export default function QuizMediumJS() {
         ) : (
           <div>
             <Confetti></Confetti>
+            {showCongrats ? (
+              <CongratsPopUp
+                title={result.title}
+                badgeImage={badge}
+                onClose={closeCongrats}
+              ></CongratsPopUp>
+            ) : null}
+
             <h3>Results</h3>
             <h3>Overall {(result.score / 25) * 100}%</h3>
             <p>

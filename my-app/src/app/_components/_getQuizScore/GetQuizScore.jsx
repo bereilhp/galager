@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
+import style from "./getQuizScore.module.css";
 
 export default function GetQuizScore() {
   const [scores, setScores] = useState([]);
@@ -11,7 +13,6 @@ export default function GetQuizScore() {
       try {
         const res = await axios.get("/api/quiz/score");
         setScores(res.data.data);
-        console.log(res.data.data);
       } catch (error) {
         console.error("Error fetching score data:", error);
       }
@@ -24,17 +25,29 @@ export default function GetQuizScore() {
     <div>
       <h2>Highest Quiz Scores:</h2>
       {scores.length > 0 ? (
-        <ul>
+        <div className={style.rowContainer}>
           {scores.map((score) => (
-            <li key={score._id}>
-              {score._id} with score {score.highestScore}%
-            </li>
+            <div key={score._id} className={style.row}>
+              <div className={style.image}>
+                <Image
+                  src={score.badge}
+                  width={120}
+                  height={120}
+                  alt="Badge for Quiz"
+                />
+              </div>
+              <div className={style.text}>
+                <p>
+                  <strong>{score._id}</strong> with score {score.highestScore}%
+                </p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
-        <ul>
-          <li>No quiz scores available</li>
-        </ul>
+        <div>
+          <p>No quiz scores available</p>
+        </div>
       )}
     </div>
   );

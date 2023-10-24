@@ -24,7 +24,7 @@ export default function QuizBasicJS() {
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
-  const badge = "badge.png";
+  const badge = "/_img/badge.png";
 
   const closeCongrats = () => {
     setShowCongrats(false);
@@ -79,6 +79,7 @@ export default function QuizBasicJS() {
           username: res.data.data.username,
           quizName: result.title,
           result: (result.score / 25) * 100,
+          badge: badge,
         });
       }
     } catch (error) {
