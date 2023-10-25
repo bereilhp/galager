@@ -24,6 +24,10 @@ export default function ProfilePageComp() {
         <Logout></Logout>
       </span>
       <Pad></Pad>
+      <Pad></Pad>
+      <Pad></Pad>
+      <Pad></Pad>
+      <Pad></Pad>
       <Footer></Footer>
     </div>
   );

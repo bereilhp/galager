@@ -86,7 +86,7 @@ export default function FillTheBlank() {
         ) : (
           <div>
             <Confetti />
-            <h3>Results</h3>
+            <h2 className={style.center}>Results</h2>
             <h3>Overall {(result.score / (questions.length * 5)) * 100}%</h3>
             <p>
               Total Questions: <span>{questions.length}</span>

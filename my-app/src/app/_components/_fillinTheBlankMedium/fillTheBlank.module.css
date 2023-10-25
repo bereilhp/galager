@@ -22,10 +22,10 @@
 .list {
   list-style-type: none;
   cursor: pointer;
-  margin: 9px 0;
-  padding: 16px 8px;
-  color: #000105;
-  border: 1px solid lightgray;
+  margin: 1.3vh 0;
+  padding: 2vh 0.8vw;
+  color: #252525;
+  border: 0.1vh solid lightgray;
 }
 
 .listHover {
@@ -36,6 +36,7 @@
 .listSelected {
   background-color: #39aa35;
 }
+
 .btn {
   background-color: #39aa35;
   color: #f5f5f5;
@@ -58,23 +59,23 @@
 }
 
 .container {
-  max-width: 740px;
+  max-width: 50vw;
   width: 100%;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5vh;
 }
 
 .quizContainer {
   background-color: #f5f5f5;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-radius: 4px;
+  padding: 1vh;
+  margin-top: 1vh;
 }
 
 .container p {
-  padding: 8px 0;
+  padding: 1vh 0;
 }
 
 .center {
   text-align: center;
+  margin-bottom: 1vh;
 }

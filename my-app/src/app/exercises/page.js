@@ -1,8 +1,7 @@
 import ExercisesIntro from "../_components/_exercisesIntro/ExercisesIntro";
-import Footer from "../_components/_footer/Footer";
+import FooterFixed from "../_components/_footerFixed/FooterFixed";
 import Navbar from "../_components/_navbar/Navbar";
 import Pad from "../_components/_pad/Pad";
-import QuizBtn from "../_components/_quizBtn/QuizBtn";
 
 export default function Page() {
   return (
@@ -10,7 +9,7 @@ export default function Page() {
       <Navbar />
       <ExercisesIntro></ExercisesIntro>
       <Pad></Pad>
-      <Footer />
+      <FooterFixed />
     </div>
   );
 }

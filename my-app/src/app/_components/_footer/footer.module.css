@@ -1,9 +1,7 @@
 .footer {
   bottom: 0;
-  left: 0;
   width: 100%;
-  padding-top: 0.3vh;
-  height: 9vh;
+  height: 8vh;
   box-sizing: border-box;
   border-top: 0.3vh solid #252525;
   background-color: #f5f5f5;
@@ -37,7 +35,7 @@
 
 .pad {
   padding-left: 2vh;
-  padding-right: 1vh;
+  padding-right: 0.5vh;
 }
 
 @media screen and (max-width: 768px) {
