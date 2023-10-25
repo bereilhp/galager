@@ -6,23 +6,23 @@ const exercises = [
   {
     title: "Quizzes",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+      "Dive into the world of JavaScript with our interactive quizzes. Whether you're a novice or an experienced developer, our quizzes cover JavaScript fundamentals, advanced topics, and real-world scenarios. ",
     link: "/exercises/quiz",
-    button: "Check it out",
+    button: "Check it out!",
   },
   {
     title: "Fill in the Blank",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+      "Refine your JavaScript knowledge with our Fill in the Blank exercises. These interactive challenges offer code snippets with missing elements, providing an opportunity to solidify your understanding.",
     link: "/exercises/fillTheBlank/",
-    button: "Check it out",
+    button: "Check it out!",
   },
   {
     title: "Find the Errors",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+      "Challenge yourself with our 'Find the Error' exercises. These interactive challenges present flawed code snippets, allowing you to refine your debugging skills and enhance your coding proficiency.",
     link: "",
-    button: "Check it out",
+    button: "Check it out!",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function ExercisesIntro() {
         {exercises.map((exercise, index) => (
           <div key={index} className={style.exerciseCard}>
             <h3>{exercise.title}</h3>
-            <p>"{exercise.description}"</p>
+            <p>{exercise.description}</p>
             <div className={style.pad}></div>
             <div className={style.pad2}></div>
             <Link href={exercise.link} className={style.button}>
