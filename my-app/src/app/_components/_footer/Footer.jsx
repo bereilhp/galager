@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className={style.footer}>
+    <div className={style.footer}>
       <div className={style.pad}>
         <div className={style.copyright}>Copyright © 2023 Galager.</div>
         <a href="https://github.com/bereilhp/galager" target="_blank">
@@ -15,6 +15,6 @@ export default function Footer() {
           ></Image>
         </a>
       </div>
-    </footer>
+    </div>
   );
 }
