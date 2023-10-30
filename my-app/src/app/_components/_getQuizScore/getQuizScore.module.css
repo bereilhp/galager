@@ -4,22 +4,42 @@
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 1vh;
+  margin-left: 12%;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  margin-right: 5vh;
+  margin-right: 3vh;
   padding: 1vh 1vw;
-  border: 1vh solid #252525;
+  border: 0.25vh solid #252525;
+  border-radius: 3vh;
+  width: 25%;
 }
 
 .image {
   text-align: center;
   margin-bottom: 0.2vh;
+  margin-top: 1.5vh;
 }
 
 .text {
   text-align: center;
   font-size: large;
+}
+
+.space {
+  margin-top: 0.1vh;
+}
+
+.title {
+  margin-bottom: 1vh;
+}
+
+.mainTitle {
+  margin-bottom: 3.5vh;
+}
+
+.pad {
+  margin-bottom: 6vh;
 }

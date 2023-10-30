@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import style from "./getQuizScore.module.css";
+import Pad from "../_pad/Pad";
 
 export default function GetQuizScore() {
   const [scores, setScores] = useState([]);
@@ -22,8 +23,8 @@ export default function GetQuizScore() {
   }, []);
 
   return (
-    <div>
-      <h2>Highest Quiz Scores:</h2>
+    <div className={style.pad}>
+      <h2 className={style.mainTitle}>Highest Quiz Scores:</h2>
       {scores.length > 0 ? (
         <div className={style.rowContainer}>
           {scores.map((score) => (
@@ -37,9 +38,10 @@ export default function GetQuizScore() {
                 />
               </div>
               <div className={style.text}>
-                <p>
-                  <strong>{score._id}</strong> with score {score.highestScore}%
+                <p className={style.title}>
+                  <strong>{score._id}</strong>
                 </p>
+                <p className={style.space}>Score: {score.highestScore}%</p>
               </div>
             </div>
           ))}

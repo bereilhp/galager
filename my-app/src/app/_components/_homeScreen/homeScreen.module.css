@@ -5,21 +5,45 @@
 
 .introText {
   font-size: large;
-}
-
-.missionText {
-  font-size: large;
+  text-align: center;
+  padding-bottom: 4.5vh;
 }
 
 .startOptions {
   text-align: center;
 }
+
 .pad {
   padding: 2vh 1vw;
 }
 
 .padStart {
   padding: 0.75vh 1vw;
+}
+
+.feature {
+  text-align: center;
+  margin: 10px;
+  width: 30%;
+  margin-bottom: 5vh;
+}
+
+.badge {
+  border: 0.1vh solid #252525;
+  height: 40vh;
+  border-radius: 2vh;
+  width: 50vw;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4vh;
 }
 
 .button {
