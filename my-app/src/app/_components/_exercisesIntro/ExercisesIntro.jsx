@@ -6,21 +6,21 @@ const exercises = [
   {
     title: "Quizzes",
     description:
-      "Dive into the world of JavaScript with our interactive quizzes. Whether you're a novice or an experienced developer, our quizzes cover JavaScript fundamentals, advanced topics, and real-world scenarios. ",
+      "Dive into the world of JavaScript with our interactive quizzes whether you're a novice or an experienced developer.",
     link: "/exercises/quiz",
     button: "Check it out!",
   },
   {
     title: "Fill in the Blank",
     description:
-      "Refine your JavaScript knowledge with our Fill in the Blank exercises. These interactive challenges offer code snippets with missing elements, providing an opportunity to solidify your understanding.",
+      "Sharpen your JavaScript skills with our Fill in the Blank exercises, reinforcing your understanding through coding challenges.",
     link: "/exercises/fillTheBlank/",
     button: "Check it out!",
   },
   {
     title: "Find the Errors",
     description:
-      "Challenge yourself with our 'Find the Error' exercises. These interactive challenges present flawed code snippets, allowing you to refine your debugging skills and enhance your coding proficiency.",
+      "Challenge yourself with our 'Find the Error' exercises to boost your coding and debugging skills.",
     link: "",
     button: "Check it out!",
   },

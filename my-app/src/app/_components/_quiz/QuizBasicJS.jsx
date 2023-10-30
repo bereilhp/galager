@@ -137,9 +137,6 @@ export default function QuizBasicJS() {
               Total Questions: <span>{questions.length}</span>
             </p>
             <p>
-              Total Score: <span>{result.score}</span>
-            </p>
-            <p>
               Correct Answers: <span>{result.correctedAnswers}</span>
             </p>
             <p>

@@ -21,7 +21,7 @@ export default function GetUsernameAlone() {
 
   return (
     <div>
-      <h2>User: {data}</h2>
+      <h2>@{data}</h2>
     </div>
   );
 }

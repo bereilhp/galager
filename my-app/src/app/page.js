@@ -1,15 +1,13 @@
 import Navbar from "./_components/_navbar/Navbar";
-import FooterFixed from "./_components/_footerFixed/FooterFixed";
 import HomeScreen from "./_components/_homeScreen/HomeScreen";
-
-import CongratsPopUp from "./_components/_congratsPopUp/CongratsPopUp";
+import Footer from "./_components/_footer/Footer";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HomeScreen></HomeScreen>
-      <FooterFixed></FooterFixed>
+      <Footer></Footer>
     </div>
   );
 }
