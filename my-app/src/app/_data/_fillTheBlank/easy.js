@@ -14,13 +14,13 @@ export const fillTheBlank = {
     },
     {
       id: 3,
-      question: "A single-line comment in JavaScript starts with ________ .",
+      question: "A single-line comment in JavaScript starts with __ .",
       correctAnswer: "//",
     },
     {
       id: 4,
       question:
-        "To display a message in the browser console, you can use ________('Your message').",
+        "To display a message in the browser console, you can use ___________('Your message').",
       correctAnswer: "console.log",
     },
     {
