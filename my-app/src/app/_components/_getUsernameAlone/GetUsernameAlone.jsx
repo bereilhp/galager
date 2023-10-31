@@ -1,27 +1,20 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import useSWR from "swr";
+
+const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 export default function GetUsernameAlone() {
-  const [data, setData] = useState(null);
+  const { data, error } = useSWR("/api/users/me", fetcher);
 
-  useEffect(() => {
-    const getUserDetails = async () => {
-      try {
-        const res = await axios.get("/api/users/me");
-        //console.log(res, res.data.data.username);
-        setData(res.data.data.username);
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
-    };
-    getUserDetails();
-  }, []);
+  if (error) {
+    console.error("Error fetching user data:", error);
+  }
 
   return (
     <div>
-      <h2>@{data}</h2>
+      <h2>@{data ? data.data.username : ""}</h2>
     </div>
   );
 }
