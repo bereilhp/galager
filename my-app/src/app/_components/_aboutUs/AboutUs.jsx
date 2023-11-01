@@ -7,7 +7,7 @@ export default function AboutUs() {
       <div className={style.aboutContainer}>
         <div className={style.imageContainer}>
           <Image
-            src="/_img/aboutUs.png"
+            src="/_img/about/aboutUs.png"
             width={120}
             height={120}
             alt="Group of people working together"

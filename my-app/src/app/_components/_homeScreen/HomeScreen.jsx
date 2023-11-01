@@ -19,7 +19,7 @@ export default function HomeScreen() {
       <div className={style.box}>
         <div className={style.feature}>
           <Image
-            src="/_img/coursesIcon.png"
+            src="/_img/home/coursesIcon.png"
             width={120}
             height={120}
             alt="Course Icon"
@@ -33,7 +33,7 @@ export default function HomeScreen() {
         </div>
         <div className={style.feature}>
           <Image
-            src="/_img/exercisesIcon.png"
+            src="/_img/home/exercisesIcon.png"
             width={120}
             height={120}
             alt="Exercises Icon"
@@ -46,7 +46,7 @@ export default function HomeScreen() {
         </div>
         <div className={style.feature}>
           <Image
-            src="/_img/badgesIcon.png"
+            src="/_img/home/badgesIcon.png"
             width={120}
             height={120}
             alt="Badges Icon"

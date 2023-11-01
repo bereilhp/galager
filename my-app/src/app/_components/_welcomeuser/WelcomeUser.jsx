@@ -10,7 +10,7 @@ export default function WelcomeUser() {
         <div className={style.overlapWrapper}>
           <div className={style.overlap}>
             <Image
-              src="/_img/JSLogoRectangle.png"
+              src="/_img/js/JSLogoRectangle.png"
               width={180}
               height={180}
               alt="JavaScript Logo"

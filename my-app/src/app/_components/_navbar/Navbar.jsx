@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={style.navbar}>
         <Link href="/">
           <Image
-            src="/_img/favicon.ico"
+            src="/_img/galager/favicon.ico"
             width={50} //180
             height={50} //45
             alt="Galager Logo"
@@ -22,7 +22,7 @@ export default function Navbar() {
         </nav>
         <Link href="/profile">
           <Image
-            src="/_img/user.png"
+            src="/_img/galager/user.png"
             width={40}
             height={40}
             alt="User icon"

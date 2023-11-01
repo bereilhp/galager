@@ -48,7 +48,9 @@ export default function GetQuizScore() {
         </div>
       ) : (
         <div>
-          <p>No quiz scores available</p>
+          <ul>
+            <li>No quiz scores available</li>
+          </ul>
         </div>
       )}
     </div>

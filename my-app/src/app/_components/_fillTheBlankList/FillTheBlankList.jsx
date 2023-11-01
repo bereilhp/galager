@@ -38,7 +38,7 @@ export default function FillTheBlankList() {
                 <p className={style.description}>{level.description}</p>
               </div>
               <Image
-                src="/_img/arrow.png"
+                src="/_img/arr/arrow.png"
                 width={30}
                 height={30}
                 alt="Arrow image"
