@@ -16,6 +16,7 @@ export default function Homepage() {
       <MeetTheTeam></MeetTheTeam>
       <Space></Space>
       <ContactUs></ContactUs>
+      <Space></Space>
     </div>
   );
 }
