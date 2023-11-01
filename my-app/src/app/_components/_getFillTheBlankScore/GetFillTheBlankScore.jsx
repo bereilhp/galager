@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
+import style from "./getFillTheBlankScore.module.css";
 
 export default function GetFillTheBlankScore() {
   const [scores, setScores] = useState([]);
@@ -21,19 +23,32 @@ export default function GetFillTheBlankScore() {
   }, []);
 
   return (
-    <div>
-      <h2>Highest Fill in the Blank Scores:</h2>
+    <div className={style.pad}>
+      <h2 className={style.mainTitle}>Highest Fill in the Blank Scores:</h2>
       {scores.length > 0 ? (
-        <ul>
+        <div className={style.rowContainer}>
           {scores.map((score) => (
-            <li key={score._id}>
-              {score._id} with score {score.highestScore}%
-            </li>
+            <div key={score._id} className={style.row}>
+              <div className={style.image}>
+                <Image
+                  src={score.badge}
+                  width={120}
+                  height={120}
+                  alt="Badge for Quiz"
+                />
+              </div>
+              <div className={style.text}>
+                <p className={style.title}>
+                  <strong>{score._id}</strong>
+                </p>
+                <p className={style.space}>Score: {score.highestScore}%</p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <ul>
-          <li>No fill in the blank scores available</li>
+          <li>No quiz scores available</li>
         </ul>
       )}
     </div>
