@@ -7,7 +7,7 @@ export default function ContactUs() {
       <div className={style.aboutContainer}>
         <div className={style.imageContainer}>
           <Image
-            src="/_img/contactUs.svg"
+            src="/_img/about/contactUs.svg"
             width={120}
             height={120}
             alt="Contact us"

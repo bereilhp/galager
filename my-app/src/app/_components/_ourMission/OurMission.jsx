@@ -7,7 +7,7 @@ export default function OurMission() {
       <div className={style.missionContainer}>
         <div className={style.imageContainer}>
           <Image
-            src="/_img/ourMission.png"
+            src="/_img/about/ourMission.png"
             width={120}
             height={120}
             alt="Arrow in the center of a target"

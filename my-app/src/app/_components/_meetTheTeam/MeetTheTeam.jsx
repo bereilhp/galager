@@ -7,7 +7,7 @@ export default function MeetTheTeam() {
       <div className={style.missionContainer}>
         <div className={style.imageContainer}>
           <Image
-            src="/_img/meetTheTeam.png"
+            src="/_img/about/meetTheTeam.png"
             width={120}
             height={120}
             alt="Dev coding"

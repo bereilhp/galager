@@ -10,7 +10,7 @@ const courses = [
     description:
       'This course is a great starting point to learn "The fundamentals".',
     link: "/courses/javascript",
-    image: "/_img/JavaScript-logo.png",
+    image: "/_img/js/JavaScript-logo.png",
     imageWidth: 180,
     imageHeight: 180,
   },
