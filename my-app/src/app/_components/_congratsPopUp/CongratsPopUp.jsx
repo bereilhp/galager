@@ -10,8 +10,8 @@ export default function CongratsPopUp({ title, badgeImage, onClose }) {
         <p>Here is your badge:</p>
         <Image
           src={badgeImage}
-          width={90}
-          height={90}
+          width={120}
+          height={120}
           alt="Congratulations Badge"
         />
         <br />

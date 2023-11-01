@@ -4,6 +4,7 @@ const fillTheBlankSchema = new mongoose.Schema({
   username: String,
   fillTheBlankExerciseName: String,
   result: Number,
+  badge: String,
 });
 
 const FillTheBlank =
