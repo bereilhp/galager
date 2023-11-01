@@ -21,13 +21,15 @@ export default function Signup() {
   const onSignup = async () => {
     try {
       if (validator.isEmail(user.email)) {
-        toast.success("Successfully signed up");
         const response = await axios.post("/api/users/signup", user);
-        console.log("Signup success", response.data);
-        setTimeout(() => {
-          router.push("/login");
-          console.log("Timeout finished!");
-        }, 2500);
+        if (response.status === 200) {
+          toast.success("Successfully signed up");
+          console.log("Signup success", response.data);
+          setTimeout(() => {
+            router.push("/login");
+            console.log("Timeout finished!");
+          }, 2500);
+        }
       } else toast.error("Enter a valid email");
     } catch (error) {
       console.log("Signup failed", error.message);
