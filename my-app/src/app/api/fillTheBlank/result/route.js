@@ -7,13 +7,14 @@ connect();
 export async function POST(req, res) {
   try {
     const reqBody = await req.json();
-    const { username, fillTheBlankExerciseName, result } = reqBody;
+    const { username, fillTheBlankExerciseName, result, badge } = reqBody;
     console.log(reqBody);
 
     const fillTheBlank = new FillTheBlank({
       username,
       fillTheBlankExerciseName,
       result,
+      badge,
     });
 
     const savedFillTheBlank = await fillTheBlank.save();

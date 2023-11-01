@@ -34,7 +34,7 @@
 }
 
 .listSelected {
-  background-color: #39aa35;
+  background-color: #888888;
 }
 
 .btn {
@@ -48,6 +48,7 @@
   font-size: large;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-top: 1vh;
 }
 
 .btn:hover {
@@ -63,6 +64,7 @@
   width: 100%;
   margin: auto;
   padding: 0.5vh;
+  padding-top: 3vh;
 }
 
 .quizContainer {

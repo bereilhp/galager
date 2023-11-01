@@ -5,14 +5,22 @@ import Confetti from "react-confetti";
 import style from "./fillTheBlank.module.css";
 import { fillTheBlank } from "../../_data/_fillTheBlank/medium";
 import axios from "axios";
+import CongratsPopUp from "../_congratsPopUp/CongratsPopUp";
 
 export default function FillTheBlankMedium() {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
+  const [showCongrats, setShowCongrats] = useState(true);
 
   const { questions } = fillTheBlank;
   const { question, correctAnswer } = questions[activeQuestion];
+
+  const badge = "/_img/badge.png";
+
+  const closeCongrats = () => {
+    setShowCongrats(false);
+  };
 
   const [result, setResult] = useState({
     title: "Medium JavaScript Fill in the Blank",
@@ -57,6 +65,7 @@ export default function FillTheBlankMedium() {
           username: res.data.data.username,
           fillTheBlankExerciseName: result.title,
           result: (result.score / 25) * 100,
+          badge: badge,
         });
       }
     } catch (error) {
@@ -86,13 +95,17 @@ export default function FillTheBlankMedium() {
         ) : (
           <div>
             <Confetti />
+            {showCongrats ? (
+              <CongratsPopUp
+                title={result.title}
+                badgeImage={badge}
+                onClose={closeCongrats}
+              ></CongratsPopUp>
+            ) : null}
             <h2 className={style.center}>Results</h2>
             <h3>Overall {(result.score / (questions.length * 5)) * 100}%</h3>
             <p>
               Total Questions: <span>{questions.length}</span>
-            </p>
-            <p>
-              Total Score: <span>{result.score}</span>
             </p>
             <p>
               Correct Answers: <span>{result.correctedAnswers}</span>
