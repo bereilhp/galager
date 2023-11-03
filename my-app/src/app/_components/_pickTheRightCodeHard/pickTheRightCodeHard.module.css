@@ -30,7 +30,8 @@
   border: none;
   border-radius: 1vh;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
+  align-items: center;
   font-size: large;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -46,11 +47,12 @@
 }
 
 .container {
-  max-width: 70vw;
+  max-width: 100vw;
   width: 100%;
   margin: auto;
   padding: 0.5vh;
   padding-top: 3vh;
+  text-align: center;
 }
 
 .quizContainer {
