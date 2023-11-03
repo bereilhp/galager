@@ -24,7 +24,7 @@ export default function QuizBasicJS() {
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
-  const badge = "/_img/badges/badge.png";
+  const badge = "/_img/badges/quiz/bronze.png";
 
   const closeCongrats = () => {
     setShowCongrats(false);
