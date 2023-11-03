@@ -98,8 +98,8 @@ export default function PickTheRightCodeHard() {
                   <Image
                     src={answer}
                     alt={`Code Image ${idx}`}
-                    width={450}
-                    height={320}
+                    width={650}
+                    height={420}
                   />
                 </div>
               ))}
