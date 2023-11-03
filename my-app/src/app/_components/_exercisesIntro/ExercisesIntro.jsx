@@ -18,10 +18,10 @@ const exercises = [
     button: "Check it out!",
   },
   {
-    title: "Find the Errors",
+    title: "Pick the Right Code",
     description:
-      "Challenge yourself with our 'Find the Error' exercises to boost your coding and debugging skills.",
-    link: "/exercises/findTheErrors/",
+      "Challenge yourself with our 'Pick the Right Code' exercises to boost your coding and debugging skills.",
+    link: "/exercises/pickTheRightCode/",
     button: "Check it out!",
   },
 ];

@@ -1,34 +1,34 @@
 import Link from "next/link";
-import style from "./findTheErrorsList.module.css";
+import style from "./pickTheRightCodeList.module.css";
 import Image from "next/image";
 import Pad from "../_pad/Pad";
 
-const findTheErrorsLevels = [
+const pickTheRightCodeLevels = [
   {
     slug: "easy",
-    title: "Easy Find The Errors Exercise",
+    title: "Easy Pick the Right Code",
     description: "Appropriate for beginner-level learners.",
   },
   {
     slug: "medium",
-    title: "Medium Find The Errors Exercise",
+    title: "Medium Pick the Right Code",
     description: "Appropriate for intermediate-level learners.",
   },
   {
     slug: "hard",
-    title: "Hard Find The Errors Exercise",
+    title: "Hard Pick the Right Code",
     description: "Appropriate for advanced-level learners.",
   },
 ];
 
-export default function FindTheErrorsList() {
+export default function PickTheRightCodeList() {
   return (
     <div className={style.centerContainer}>
-      <h1 className={style.center}>Fill in the Blank Exercises</h1>
-      {findTheErrorsLevels.map((level) => (
+      <h1 className={style.center}>Pick the Right Code Exercises</h1>
+      {pickTheRightCodeLevels.map((level) => (
         <Link
           key={level.slug}
-          href={`/exercises/fillTheBlank/${level.slug}`}
+          href={`/exercises/pickTheRightCode/${level.slug}`}
           className={style.noDecoration}
         >
           <div className={style.findTheErrorsCard}>

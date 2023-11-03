@@ -1,0 +1,88 @@
+.global {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.list {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 1.3vh 0;
+  padding: 2vh 0.8vw;
+  color: #252525;
+  border: 0.1vh solid lightgray;
+}
+
+.listHover {
+  background-color: #d8d8d8;
+  columns: #fff;
+}
+
+.listSelected {
+  background-color: #888888;
+}
+
+.btn {
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 2vh;
+}
+
+.btn:hover {
+  background-color: #009a53;
+}
+
+.btn:active {
+  background-color: #39aa35;
+}
+
+.container {
+  max-width: 70vw;
+  width: 100%;
+  margin: auto;
+  padding: 0.5vh;
+  padding-top: 3vh;
+}
+
+.quizContainer {
+  background-color: #f5f5f5;
+  padding: 1vh;
+  margin-top: 1vh;
+}
+
+.container p {
+  padding: 1vh 0;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.codeImagesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.codeImage {
+  margin: 1vh;
+  padding: 1vh;
+  cursor: pointer;
+}
+
+.codeImage:hover {
+  border: 0.2vh solid #39aa35;
+}
+
+.selectedImage {
+  border: 0.2vh solid #39aa35;
+}
