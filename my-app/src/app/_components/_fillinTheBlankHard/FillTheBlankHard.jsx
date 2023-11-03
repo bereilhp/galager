@@ -16,7 +16,7 @@ export default function FillTheBlankHard() {
   const { questions } = fillTheBlank;
   const { question, correctAnswer } = questions[activeQuestion];
 
-  const badge = "/_img/badges/badge.png";
+  const badge = "/_img/badges/fillTheBlank/gold.png";
 
   const closeCongrats = () => {
     setShowCongrats(false);

@@ -1,30 +1,29 @@
 "use client";
 
-import style from "./quiz.module.css";
-import { quiz } from "../../_data/_quiz/medium";
+import { pickTheRightCode } from "../../_data/_pickTheRightCode/hard";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import axios from "axios";
 import CongratsPopUp from "../_congratsPopUp/CongratsPopUp";
+import style from "./pickTheRightCodeHard.module.css";
+import Image from "next/image";
 
-export default function QuizMediumJS() {
+export default function PickTheRightCodeHard() {
   const [activeQuestion, setActiveQuestion] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [showCongrats, setShowCongrats] = useState(true);
   const [result, setResult] = useState({
-    title: "Medium JavaScript Quiz",
+    title: "Hard JavaScript Pick the Right Code",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
   });
 
-  const { questions } = quiz;
+  const { questions } = pickTheRightCode;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
-  const badge = "/_img/badges/quiz/silver.png";
+  const badge = "/_img/badges/pickTheRightCode/gold.png";
 
   const closeCongrats = () => {
     setShowCongrats(false);
@@ -32,52 +31,42 @@ export default function QuizMediumJS() {
 
   useEffect(() => {
     if (showResult) {
-      sendQuizData(); // Call sendQuizData when showResult is true
+      sendPickTheRightCodeData();
     }
   }, [showResult]);
 
-  //Select and check ans
-  const onAnswerSelected = (answer, idx) => {
-    setChecked(true);
-    setSelectedAnswerIndex(idx);
-    if (answer === correctAnswer) {
-      setSelectedAnswer(true);
-      console.log("true");
-    } else {
-      setSelectedAnswer(false);
-      console.log("false");
-    }
+  const onAnswerSelected = (answerIndex) => {
+    setSelectedAnswerIndex(answerIndex);
   };
 
   const nextQuestion = () => {
+    const isCorrect = selectedAnswerIndex === answers.indexOf(correctAnswer);
+    setResult((prev) => ({
+      ...prev,
+      score: isCorrect ? prev.score + 5 : prev.score,
+      correctedAnswers: isCorrect
+        ? prev.correctedAnswers + 1
+        : prev.correctedAnswers,
+      wrongAnswers: isCorrect ? prev.wrongAnswers : prev.wrongAnswers + 1,
+    }));
+
     setSelectedAnswerIndex(null);
-    setResult((prev) =>
-      selectedAnswer
-        ? {
-            ...prev,
-            score: prev.score + 5,
-            correctedAnswers: prev.correctedAnswers + 1,
-          }
-        : { ...prev, wrongAnswers: prev.wrongAnswers + 1 }
-    );
 
     if (activeQuestion !== questions.length - 1) {
-      setActiveQuestion((prev) => prev + 1);
+      setActiveQuestion(activeQuestion + 1);
     } else {
       setActiveQuestion(0);
       setShowResult(true);
     }
-
-    setChecked(false);
   };
 
-  const sendQuizData = async () => {
+  const sendPickTheRightCodeData = async () => {
     try {
       const res = await axios.get("/api/users/me");
       if (showResult) {
-        const response = await axios.post("/api/quiz/result", {
+        const response = await axios.post("/api/pickTheRightCode/result", {
           username: res.data.data.username,
-          quizName: result.title,
+          exerciseName: result.title,
           result: (result.score / 25) * 100,
           badge: badge,
         });
@@ -94,27 +83,31 @@ export default function QuizMediumJS() {
         {!showResult ? (
           <div className={style.quizContainer}>
             <h2 className={style.center}>
-              Question {activeQuestion + 1}
-              <span>/{questions.length}</span>
+              Question {activeQuestion + 1}/{questions.length}
             </h2>
-            <h3>{questions[activeQuestion].question}</h3>
-            {answers.map((answer, idx) => (
-              <li
-                key={idx}
-                onClick={() => onAnswerSelected(answer, idx)}
-                className={`${style.list} ${
-                  selectedAnswerIndex === idx
-                    ? style.listSelected
-                    : style.listHover
-                }`}
-              >
-                <span>{answer}</span>
-              </li>
-            ))}
+            <h3>{question}</h3>
+            <div className={style.codeImagesContainer}>
+              {answers.map((answer, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => onAnswerSelected(idx)}
+                  className={`${style.codeImage} ${
+                    selectedAnswerIndex === idx ? style.selectedImage : ""
+                  }`}
+                >
+                  <Image
+                    src={answer}
+                    alt={`Code Image ${idx}`}
+                    width={450}
+                    height={320}
+                  />
+                </div>
+              ))}
+            </div>
 
-            {checked ? (
+            {selectedAnswerIndex !== null ? (
               <button onClick={nextQuestion} className={style.btn}>
-                {activeQuestion === question.length - 1 ? "Finish" : "Next"}
+                {activeQuestion === questions.length - 1 ? "Finish" : "Next"}
               </button>
             ) : (
               <button className={style.btn}>Select an answer</button>
@@ -122,13 +115,13 @@ export default function QuizMediumJS() {
           </div>
         ) : (
           <div>
-            <Confetti></Confetti>
+            <Confetti />
             {showCongrats ? (
               <CongratsPopUp
                 title={result.title}
                 badgeImage={badge}
                 onClose={closeCongrats}
-              ></CongratsPopUp>
+              />
             ) : null}
 
             <h2 className={style.center}>Results</h2>

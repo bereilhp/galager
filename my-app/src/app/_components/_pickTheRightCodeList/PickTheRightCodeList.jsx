@@ -6,17 +6,17 @@ import Pad from "../_pad/Pad";
 const pickTheRightCodeLevels = [
   {
     slug: "easy",
-    title: "Easy Pick the Right Code",
+    title: "Easy JavaScript Pick the Right Code",
     description: "Appropriate for beginner-level learners.",
   },
   {
     slug: "medium",
-    title: "Medium Pick the Right Code",
+    title: "Medium JavaScript Pick the Right Code",
     description: "Appropriate for intermediate-level learners.",
   },
   {
     slug: "hard",
-    title: "Hard Pick the Right Code",
+    title: "Hard JavaScript Pick the Right Code",
     description: "Appropriate for advanced-level learners.",
   },
 ];

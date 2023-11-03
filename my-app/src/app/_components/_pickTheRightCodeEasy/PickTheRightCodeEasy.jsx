@@ -14,7 +14,7 @@ export default function PickTheRightCodeEasy() {
   const [showResult, setShowResult] = useState(false);
   const [showCongrats, setShowCongrats] = useState(true);
   const [result, setResult] = useState({
-    title: "Easy Pick the Right Code",
+    title: "Easy JavaScript Pick the Right Code",
     score: 0,
     correctedAnswers: 0,
     wrongAnswers: 0,
@@ -23,7 +23,7 @@ export default function PickTheRightCodeEasy() {
   const { questions } = pickTheRightCode;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
-  const badge = "/_img/badges/badge.png";
+  const badge = "/_img/badges/pickTheRightCode/bronze.png";
 
   const closeCongrats = () => {
     setShowCongrats(false);
@@ -49,6 +49,8 @@ export default function PickTheRightCodeEasy() {
         : prev.correctedAnswers,
       wrongAnswers: isCorrect ? prev.wrongAnswers : prev.wrongAnswers + 1,
     }));
+
+    setSelectedAnswerIndex(null);
 
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion(activeQuestion + 1);
