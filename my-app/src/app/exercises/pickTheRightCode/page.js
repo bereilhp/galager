@@ -1,12 +1,12 @@
-import FindTheErrorsList from "../../_components/_findTheErrorsList/FindTheErrorsList";
 import FooterFixed from "../../_components/_footerFixed/FooterFixed";
 import Navbar from "../../_components/_navbar/Navbar";
+import PickTheRightCodeList from "../../_components/_pickTheRightCodeList/PickTheRightCodeList";
 
 export default function Page() {
   return (
     <div>
       <Navbar />
-      <FindTheErrorsList></FindTheErrorsList>
+      <PickTheRightCodeList></PickTheRightCodeList>
       <FooterFixed></FooterFixed>
     </div>
   );
