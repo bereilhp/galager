@@ -21,7 +21,7 @@ const exercises = [
     title: "Find the Errors",
     description:
       "Challenge yourself with our 'Find the Error' exercises to boost your coding and debugging skills.",
-    link: "",
+    link: "/exercises/findTheErrors/",
     button: "Check it out!",
   },
 ];
