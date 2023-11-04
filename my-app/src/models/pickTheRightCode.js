@@ -8,7 +8,7 @@ const pickTheRightCodeSchema = new mongoose.Schema({
 });
 
 const PickTheRightCode =
-  mongoose.models.PickTheRightCode ||
+  mongoose.models.pickTheRightCodes ||
   mongoose.model("pickTheRightCodes", pickTheRightCodeSchema);
 
 export default PickTheRightCode;
