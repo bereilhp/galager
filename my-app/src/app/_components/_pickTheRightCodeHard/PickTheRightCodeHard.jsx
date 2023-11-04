@@ -66,7 +66,7 @@ export default function PickTheRightCodeHard() {
       if (showResult) {
         const response = await axios.post("/api/pickTheRightCode/result", {
           username: res.data.data.username,
-          exerciseName: result.title,
+          pickTheRightCodeExerciseName: result.title,
           result: (result.score / 25) * 100,
           badge: badge,
         });
