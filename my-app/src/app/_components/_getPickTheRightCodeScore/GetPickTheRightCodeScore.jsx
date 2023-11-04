@@ -2,28 +2,29 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import style from "./getFindTheErrorsScore.module.css";
+import style from "./getPickTheRightCodeScore.module.css";
+import Image from "next/image";
 
-export default function GetFindTheErrorsScore() {
+export default function GetPickTheRightCodeScore() {
   const [scores, setScores] = useState([]);
 
   useEffect(() => {
-    const getFindTheErrorsScore = async () => {
+    const getPickTheRightCodeScore = async () => {
       try {
-        const res = await axios.get("/api/findTheErrors/score");
+        const res = await axios.get("/api/pickTheRightCode/score");
         setScores(res.data.data);
         console.log(res.data.data);
       } catch (error) {
-        console.error("Error fetching score data:", error);
+        console.error("Error fetching pick the right score data:", error);
       }
     };
 
-    getFindTheErrorsScore();
+    getPickTheRightCodeScore();
   }, []);
 
   return (
     <div className={style.pad}>
-      <h2 className={style.mainTitle}>Highest Find the Errors Scores:</h2>
+      <h2 className={style.mainTitle}>Highest Pick the Right Code Scores:</h2>
       {scores.length > 0 ? (
         <div className={style.rowContainer}>
           {scores.map((score) => (
@@ -48,7 +49,7 @@ export default function GetFindTheErrorsScore() {
       ) : (
         <div>
           <ul>
-            <li>No find the errors scores available</li>
+            <li>No pick the right code scores available</li>
           </ul>
         </div>
       )}

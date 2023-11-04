@@ -6,7 +6,7 @@ import Pad from "../_pad/Pad";
 import style from "./profilePageComp.module.css";
 import GetUsernameAlone from "../_getUsernameAlone/GetUsernameAlone";
 import GetFillTheBlankScore from "../_getFillTheBlankScore/GetFillTheBlankScore";
-import GetFindTheErrorsScore from "../_getFindTheErrorsScore/GetFindTheErrorsScore";
+import GetPickTheRightCodeScore from "../_getPickTheRightCodeScore/GetPickTheRightCodeScore";
 
 export default function ProfilePageComp() {
   return (
@@ -18,7 +18,7 @@ export default function ProfilePageComp() {
       </span>
       <GetQuizScore></GetQuizScore>
       <GetFillTheBlankScore></GetFillTheBlankScore>
-      <GetFindTheErrorsScore></GetFindTheErrorsScore>
+      <GetPickTheRightCodeScore></GetPickTheRightCodeScore>
       <Pad></Pad>
       <span className={style.align}>
         <Logout></Logout>

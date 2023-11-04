@@ -15,7 +15,7 @@ export default function GetFillTheBlankScore() {
         setScores(res.data.data);
         console.log(res.data.data);
       } catch (error) {
-        console.error("Error fetching score data:", error);
+        console.error("Error fetching fill in the blank score data:", error);
       }
     };
 

@@ -15,7 +15,7 @@ export default function GetQuizScore() {
         const res = await axios.get("/api/quiz/score");
         setScores(res.data.data);
       } catch (error) {
-        console.error("Error fetching score data:", error);
+        console.error("Error fetching quiz score data:", error);
       }
     };
 
