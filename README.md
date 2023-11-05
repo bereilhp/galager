@@ -1,6 +1,6 @@
 # Galager
 
-Node version: v20.8.1
+Node version: v20.9.0
 
 ## Tech Stack
 
