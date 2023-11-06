@@ -99,7 +99,7 @@ export default function PickTheRightCodeMedium() {
                     src={answer}
                     alt={`Code Image ${idx}`}
                     width={700}
-                    height={350}
+                    height={370}
                   />
                 </div>
               ))}

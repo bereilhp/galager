@@ -30,16 +30,16 @@ export const pickTheRightCode = {
     },
     {
       id: 4,
-      question: "Which of these prints 'Linus Torvalds'?",
+      question: "Which of these adds the first 5 numbers together?",
       answers: [
-        "/_img/pickTheRightCode/hard/conditionBad.png",
-        "/_img/pickTheRightCode/hard/conditionGood.png",
+        "/_img/pickTheRightCode/hard/sumOfNumbersBad.png",
+        "/_img/pickTheRightCode/hard/sumOfNumbersGood.png",
       ],
-      correctAnswer: "/_img/pickTheRightCode/hard/conditionGood.png",
+      correctAnswer: "/_img/pickTheRightCode/hard/sumOfNumbersGood.png",
     },
     {
       id: 5,
-      question: "Which of these prints 'The value is a string.'?",
+      question: "Which of these prints 'It's a number.'?",
       answers: [
         "/_img/pickTheRightCode/hard/typeofBad.png",
         "/_img/pickTheRightCode/hard/typeofGood.png",

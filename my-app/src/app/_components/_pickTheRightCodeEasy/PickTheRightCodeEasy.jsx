@@ -98,7 +98,7 @@ export default function PickTheRightCodeEasy() {
                   <Image
                     src={answer}
                     alt={`Code Image ${idx}`}
-                    width={450}
+                    width={550}
                     height={320}
                   />
                 </div>
