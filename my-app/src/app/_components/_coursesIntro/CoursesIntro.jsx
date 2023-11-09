@@ -1,8 +1,6 @@
 import Image from "next/image";
 import style from "./coursesIntro.module.css";
-import StartLearningJS from "../_startLearninJS/StartLearning";
 import Link from "next/link";
-import Pad from "../_pad/Pad";
 
 const courses = [
   {
@@ -42,7 +40,7 @@ export default function CoursesIntro() {
             <p>{course.description}</p>
             <br />
             <Link href={course.link} className={style.button}>
-              Learn Now
+              Start Now
             </Link>
             <div className={style.pad}></div>
           </div>
