@@ -1,8 +1,6 @@
-import Image from "next/image";
 import style from "./javaScriptCourseIntro.module.css";
-import StartLearningJS from "../_startLearninJS/StartLearning";
-import Link from "next/link";
 import Pad from "../_pad/Pad";
+import Link from "next/link";
 
 export default function JavaScriptCourseIntro() {
   return (
@@ -21,10 +19,14 @@ export default function JavaScriptCourseIntro() {
         <li>Have a lot of fun :)</li>
       </ul>
       <p className={style.introText}>
-        Lets stop wasting time and get right to it! Click Chapter 0 to start
-        your journey
+        Lets stop wasting time and get right to it!
       </p>
       <Pad></Pad>
+      <div className={style.btnCenter}>
+        <Link href="/courses/javascript/chapter0" className={style.button}>
+          Start Course
+        </Link>
+      </div>
     </div>
   );
 }
