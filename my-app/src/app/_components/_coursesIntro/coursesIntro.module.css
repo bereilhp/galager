@@ -25,23 +25,12 @@
   margin-top: 1vh;
 }
 
-.courseCard {
-  flex: 1;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 0;
-  padding: 1vh 1vw;
-  text-align: center;
-  box-shadow: 0 0.2vh 0.1vw #252525;
-}
-
 .courseCards {
-  border: 0.15vh solid #252525;
+  border: 0.2vh solid #e0e0e0;
   width: 40%;
   margin: auto;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-radius: 1vh;
-  box-shadow: 0 0.2vh 0.1vw #252525;
   padding: 0.25vh 0.25vw;
   margin-bottom: 2vh;
 }
