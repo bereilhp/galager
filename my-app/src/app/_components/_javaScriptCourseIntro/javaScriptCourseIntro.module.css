@@ -5,11 +5,37 @@
 }
 
 .introText {
-  font-size: 1.2rem;
+  font-size: large;
   margin: 20px 0;
 }
 
 .featureList {
-  list-style-type: disc;
   margin-left: 20px;
+  font-size: large;
+}
+
+.button {
+  background-color: #39aa35;
+  color: #f5f5f5;
+  padding: 1.75vh 1.75vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #009a53;
+}
+
+.button:active {
+  background-color: #39aa35;
+}
+
+.btnCenter {
+  text-align: center;
 }
