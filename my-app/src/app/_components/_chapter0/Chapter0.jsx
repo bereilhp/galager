@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./chapter0.module.css";
+import Link from "next/link";
 
 export default function Chapter0() {
   return (
@@ -67,6 +68,15 @@ export default function Chapter0() {
             <p>
               JavaScript files use the extension <code>.js</code>.
             </p>
+          </section>
+
+          <section className={style.section}>
+            <h2>Train what you just learned</h2>
+            <ul>
+              <Link href="/exercises/quiz/easy">
+                <li>Easy JavaScript Quiz</li>
+              </Link>
+            </ul>
           </section>
         </div>
       </div>
