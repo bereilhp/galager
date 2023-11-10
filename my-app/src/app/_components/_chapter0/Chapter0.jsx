@@ -11,8 +11,10 @@ export default function Chapter0() {
           <section className={style.section}>
             <h2>What is JavaScript?</h2>
             <p>
-              JavaScript is a powerful, versatile scripting language that adds
-              interactivity to websites.
+              JavaScript is a high-level, interpreted programming language that
+              is widely used to make web pages interactive. It is a versatile
+              language that can be run in the browser as well as on servers,
+              thanks to platforms like Node.js.
             </p>
           </section>
 
