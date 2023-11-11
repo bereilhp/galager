@@ -1,6 +1,5 @@
 import Image from "next/image";
 import style from "./chapter4.module.css";
-import Link from "next/link";
 
 export default function Chapter4() {
   return (
