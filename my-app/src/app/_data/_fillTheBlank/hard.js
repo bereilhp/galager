@@ -22,7 +22,7 @@ export const fillTheBlank = {
     {
       id: 4,
       question:
-        "In JavaScript, to create an exact copy of an object, you can use 'Object.______(sourceObject)'.",
+        "In JavaScript, to create an exact copy of an object, you can use 'Object.______(target, sourceObject)'.",
       correctAnswer: "assign",
     },
     {
