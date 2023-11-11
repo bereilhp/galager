@@ -114,7 +114,9 @@ export default function Chapter2() {
             <p>
               Arrays in JavaScript are used to store multiple values in a single
               variable. They are created using square brackets and can hold
-              various data types.
+              various data types. You can use the <code>push</code> method to
+              add elements to the end of the array and the <code>pop</code>{" "}
+              method to remove the last element from the array.
             </p>
 
             <div className={style.centeredImage}>
