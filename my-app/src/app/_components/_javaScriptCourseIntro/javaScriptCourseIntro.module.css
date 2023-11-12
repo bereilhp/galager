@@ -6,11 +6,17 @@
 
 .introText {
   font-size: large;
-  margin: 20px 0;
+  margin: 1.5vh;
+}
+
+.intro {
+  font-size: large;
+  margin: 1.5vh;
+  text-align: center;
 }
 
 .featureList {
-  margin-left: 20px;
+  margin-left: 1.5vh;
   font-size: large;
 }
 
@@ -38,4 +44,18 @@
 
 .btnCenter {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    font-size: xx-large;
+  }
+
+  .featureList {
+    margin-left: 10px;
+  }
+
+  .button {
+    width: 90%;
+  }
 }

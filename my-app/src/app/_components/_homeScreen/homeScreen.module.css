@@ -67,3 +67,21 @@
 .button:active {
   background-color: #39aa35;
 }
+
+@media screen and (max-width: 768px) {
+  .feature {
+    width: 90%;
+  }
+
+  .badge {
+    width: 90%;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 90%;
+  }
+}

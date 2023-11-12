@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Chapter2() {
   return (
     <div>
-      <h1 className={style.title}>Chapter 2 - JavaScript</h1>
+      <h1 className={style.title}>Chapter 2</h1>
       <div className={style.content}>
         <div className={style.text}>
           <section className={style.section}>
@@ -116,7 +116,7 @@ export default function Chapter2() {
               variable. They are created using square brackets and can hold
               various data types. You can use the <code>push</code> method to
               add elements to the end of the array and the <code>pop</code>{" "}
-              method to remove the last element from the array.
+              method to remove the last element from the array. They start at 0.
             </p>
 
             <div className={style.centeredImage}>
@@ -259,7 +259,7 @@ export default function Chapter2() {
           </section>
 
           <section className={style.section}>
-            <h2>Train what you just learned</h2>
+            <h2>Test your Knowledge:</h2>
             <ul>
               <Link href="/exercises/quiz/hard">
                 <li>Hard JavaScript Quiz</li>

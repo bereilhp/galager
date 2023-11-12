@@ -19,12 +19,11 @@ export default function CoursesIntro() {
     <div className={style.introContainer}>
       <h1 className={style.center}>Courses</h1>
       <p className={style.introText}>
-        Welcome to Galager Courses, your gateway to mastering JavaScript!
-      </p>
-      <p className={style.introText}>
+        Welcome to Galager Courses, your gateway to mastering JavaScript! <br />{" "}
         Whether you're a beginner or an experienced developer, our collection of
         free JavaScript courses will help you expand your knowledge and skills.
       </p>
+
       <div className={style.padCard}></div>
       <div>
         {courses.map((course, index) => (
@@ -39,8 +38,9 @@ export default function CoursesIntro() {
             ></Image>
             <p>{course.description}</p>
             <br />
+            <br />
             <Link href={course.link} className={style.button}>
-              Start Now
+              Begin Now
             </Link>
             <div className={style.pad}></div>
           </div>

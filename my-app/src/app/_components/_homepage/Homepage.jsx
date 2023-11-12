@@ -17,6 +17,7 @@ export default function Homepage() {
       <Space></Space>
       <ContactUs></ContactUs>
       <Space></Space>
+      <Pad></Pad>
     </div>
   );
 }

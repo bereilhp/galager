@@ -4,7 +4,7 @@ import style from "./chapter4.module.css";
 export default function Chapter4() {
   return (
     <div>
-      <h1 className={style.title}>Chapter 4 - JavaScript</h1>
+      <h1 className={style.title}>Chapter 4</h1>
       <div className={style.content}>
         <div className={style.text}>
           <section className={style.section}>

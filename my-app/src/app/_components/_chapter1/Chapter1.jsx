@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Chapter1() {
   return (
     <div>
-      <h1 className={style.title}>Chapter 1 - JavaScript</h1>
+      <h1 className={style.title}>Chapter 1</h1>
       <div className={style.content}>
         <div className={style.text}>
           <section className={style.section}>
@@ -203,7 +203,7 @@ export default function Chapter1() {
           </section>
 
           <section className={style.section}>
-            <h2>Train what you just learned</h2>
+            <h2>Test your Knowledge:</h2>
             <ul>
               <Link href="/exercises/quiz/medium">
                 <li>Medium JavaScript Quiz</li>

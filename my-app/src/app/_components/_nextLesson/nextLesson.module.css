@@ -40,3 +40,25 @@
 .nextButton:active {
   background-color: #39aa35;
 }
+
+@media screen and (max-width: 768px) {
+  .lessonButtons {
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 0;
+  }
+
+  .backButton,
+  .nextButton {
+    width: 50%;
+    margin: 1vh 0;
+  }
+
+  .backButton {
+    margin-right: 0;
+  }
+
+  .nextButton {
+    margin-left: 0;
+  }
+}

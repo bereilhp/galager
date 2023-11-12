@@ -22,3 +22,27 @@
 .centeredImage {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: xx-large;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  .text {
+    padding: 1vh 2vw;
+    font-size: medium;
+  }
+
+  .section {
+    margin-bottom: 2vh;
+  }
+
+  .centeredImage img {
+    width: 100%;
+    height: auto;
+  }
+}
