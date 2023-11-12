@@ -43,3 +43,23 @@
 .pad {
   margin-bottom: 6vh;
 }
+
+@media only screen and (max-width: 768px) {
+  .rowContainer {
+    margin-left: 5%;
+  }
+
+  .row {
+    width: 45%;
+    margin-top: 2vh;
+    margin-right: 2%;
+  }
+
+  .mainTitle {
+    margin-bottom: 2vh;
+  }
+
+  .pad {
+    margin-bottom: 3vh;
+  }
+}

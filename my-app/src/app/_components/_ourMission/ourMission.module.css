@@ -59,3 +59,25 @@
     opacity: 1;
   }
 }*/
+
+@media (max-width: 768px) {
+  .center {
+    flex-direction: column;
+  }
+
+  .missionContainer {
+    margin: 0;
+  }
+
+  .title {
+    font-size: large;
+  }
+
+  .blueLine {
+    width: 20vw;
+  }
+
+  .text {
+    font-size: small;
+  }
+}

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Chapter5() {
   return (
     <div>
-      <h1 className={style.title}>Chapter 5 - JavaScript</h1>
+      <h1 className={style.title}>Chapter 5</h1>
       <div className={style.content}>
         <div className={style.text}>
           <section className={style.section}>

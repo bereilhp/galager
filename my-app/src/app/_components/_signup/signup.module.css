@@ -44,7 +44,7 @@
 
 .input:focus {
   outline: none;
-  border: 2px solid #39aa35;
+  border: 0.2vh solid #39aa35;
 }
 
 .signupButton {

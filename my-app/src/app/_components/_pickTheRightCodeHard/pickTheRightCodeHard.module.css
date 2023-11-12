@@ -89,3 +89,29 @@
 .selectedImage {
   border: 0.2vh solid #39aa35;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1vh;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .codeImagesContainer {
+    flex-direction: column;
+  }
+
+  .codeImage {
+    margin: 0;
+  }
+  .quizContainer {
+    margin: auto;
+  }
+
+  .codeImage img {
+    width: 100%;
+    height: auto;
+  }
+}

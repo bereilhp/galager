@@ -8,21 +8,21 @@ const exercises = [
     description:
       "Dive into the world of JavaScript with our interactive quizzes whether you're a novice or an experienced developer.",
     link: "/exercises/quiz",
-    button: "Check it out!",
+    button: "Start Now",
   },
   {
     title: "Fill in the Blank",
     description:
       "Sharpen your JavaScript skills with our Fill in the Blank exercises, reinforcing your understanding through coding challenges.",
     link: "/exercises/fillTheBlank/",
-    button: "Check it out!",
+    button: "Start Now",
   },
   {
     title: "Pick the Right Code",
     description:
       "Challenge yourself with our 'Pick the Right Code' exercises to boost your coding and debugging skills.",
     link: "/exercises/pickTheRightCode/",
-    button: "Check it out!",
+    button: "Start Now",
   },
 ];
 
@@ -50,6 +50,7 @@ export default function ExercisesIntro() {
           </div>
         ))}
       </div>
+      <Pad></Pad>
     </div>
   );
 }

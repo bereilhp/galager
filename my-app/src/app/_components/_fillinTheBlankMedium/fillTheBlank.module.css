@@ -7,15 +7,12 @@
 
 .input {
   width: 97%;
-  padding: 8px;
+  padding: 1vh;
   border: none;
   outline: none;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 2px solid #009a53;
-  border-radius: 4px;
-  padding: 8px;
-  margin: 8px 0;
+  font-size: large;
+  border-radius: 0.4vh;
+  border: 0.2vh solid #009a53;
   margin-bottom: 2vh;
 }
 
@@ -80,4 +77,14 @@
 .center {
   text-align: center;
   margin-bottom: 1vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90vw;
+  }
+
+  .input {
+    width: 95%;
+  }
 }

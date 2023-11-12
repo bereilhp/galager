@@ -12,19 +12,21 @@
 
 .exerciseList {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 1vh;
 }
 
 .exerciseCard {
   flex: 1;
+  width: 40%;
   background-color: #ffffff;
   border: 0.2vh solid #e0e0e0;
   border-radius: 1vh;
   padding: 1vh 3vw;
   text-align: center;
-  height: 30vh;
+  height: 35vh;
 }
 
 .exerciseCard h3 {
@@ -64,4 +66,10 @@
 
 .button:active {
   background-color: #39aa35;
+}
+
+@media screen and (max-width: 768px) {
+  .exerciseCard {
+    width: 90%;
+  }
 }
