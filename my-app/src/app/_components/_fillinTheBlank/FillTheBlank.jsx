@@ -69,7 +69,7 @@ export default function FillTheBlank() {
         });
       }
     } catch (error) {
-      console.log("Send data failed", error.message);
+      console.log("Send data Fill in The Blank failed", error.message);
     }
   };
   return (

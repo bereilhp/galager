@@ -42,10 +42,10 @@ export default function QuizHardJS() {
     setSelectedAnswerIndex(idx);
     if (answer === correctAnswer) {
       setSelectedAnswer(true);
-      console.log("true");
+      //console.log("true");
     } else {
       setSelectedAnswer(false);
-      console.log("false");
+      //console.log("false");
     }
   };
 
@@ -83,7 +83,7 @@ export default function QuizHardJS() {
         });
       }
     } catch (error) {
-      console.log("Send data failed", error.message);
+      console.log("Send Quiz data failed", error.message);
     }
   };
 

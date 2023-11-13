@@ -8,7 +8,7 @@ export async function POST(req, res) {
   try {
     const reqBody = await req.json();
     const { username, quizName, result, badge } = reqBody;
-    console.log(reqBody);
+    //console.log(reqBody);
 
     const quiz = new Quiz({
       username,
@@ -18,7 +18,7 @@ export async function POST(req, res) {
     });
 
     const savedQuiz = await quiz.save();
-    console.log(savedQuiz);
+    //console.log(savedQuiz);
 
     return NextResponse.json({ message: "Quiz data saved successfully" });
   } catch (error) {

@@ -22,5 +22,7 @@ export const config = {
     "/courses",
     "/courses/:path*",
     "/exercises",
+    "/exercises/:path*",
+    "/about",
   ],
 };

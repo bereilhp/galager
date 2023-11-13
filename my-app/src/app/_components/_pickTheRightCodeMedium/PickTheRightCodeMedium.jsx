@@ -72,7 +72,7 @@ export default function PickTheRightCodeMedium() {
         });
       }
     } catch (error) {
-      console.log("Send data failed", error.message);
+      console.log("Send Pick the Right Code data failed", error.message);
     }
   };
 
