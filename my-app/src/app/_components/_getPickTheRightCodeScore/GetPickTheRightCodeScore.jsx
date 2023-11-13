@@ -13,7 +13,7 @@ export default function GetPickTheRightCodeScore() {
       try {
         const res = await axios.get("/api/pickTheRightCode/score");
         setScores(res.data.data);
-        console.log(res.data.data);
+        //console.log(res.data.data);
       } catch (error) {
         console.error("Error fetching pick the right score data:", error);
       }

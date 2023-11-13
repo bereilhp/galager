@@ -8,7 +8,7 @@ export async function POST(req, res) {
   try {
     const reqBody = await req.json();
     const { username, fillTheBlankExerciseName, result, badge } = reqBody;
-    console.log(reqBody);
+    //console.log(reqBody);
 
     const fillTheBlank = new FillTheBlank({
       username,
@@ -18,7 +18,7 @@ export async function POST(req, res) {
     });
 
     const savedFillTheBlank = await fillTheBlank.save();
-    console.log(savedFillTheBlank);
+    //console.log(savedFillTheBlank);
 
     return NextResponse.json({
       message: "Fill The Blank data saved successfully",

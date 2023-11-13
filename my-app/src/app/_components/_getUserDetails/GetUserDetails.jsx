@@ -12,7 +12,7 @@ export default function GetUserDetails() {
 
   const getUserDetails = async () => {
     const res = await axios.get("/api/users/me");
-    console.log(res.data);
+    //console.log(res.data);
     setData(res.data.data._id);
   };
 

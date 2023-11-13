@@ -13,7 +13,7 @@ export default function GetFillTheBlankScore() {
       try {
         const res = await axios.get("/api/fillTheBlank/score");
         setScores(res.data.data);
-        console.log(res.data.data);
+        //console.log(res.data.data);
       } catch (error) {
         console.error("Error fetching fill in the blank score data:", error);
       }
