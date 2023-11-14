@@ -1,6 +1,16 @@
 # Galager
 
-Node version: v20.9.0
+## Code
+
+```
+cd my-app/
+```
+
+Node.js Version (Should be v20.9.0)
+
+```
+nvm use
+```
 
 ## Tech Stack
 
