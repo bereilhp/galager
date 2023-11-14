@@ -1,7 +1,6 @@
 "use client";
 
 import axios from "axios";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Toaster, toast } from "react-hot-toast";
 import style from "./logout.module.css";
@@ -11,13 +10,17 @@ export default function Logout() {
 
   const logout = async () => {
     try {
-      await axios.get("api/users/logout");
-      toast.success("Logout succesfull");
-      router.push("/login");
-      console.log("Timeout finished!");
+      const response = await axios.get("api/users/logout");
+
+      if (response.status === 200) {
+        toast.success("Logout successful");
+        router.push("/login");
+      } else {
+        toast.error("Logout failed. Please try again.");
+      }
     } catch (error) {
-      console.log(error.message);
-      toast.error(error.message);
+      console.error("Logout error:", error);
+      toast.error("An error occurred during logout. Please try again.");
     }
   };
 
