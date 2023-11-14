@@ -14,7 +14,10 @@ export default function Logout() {
 
       if (response.status === 200) {
         toast.success("Logout successful");
-        router.push("/login");
+        setTimeout(function () {
+          console.log("Timeout executed!");
+          router.push("/login");
+        }, 2500);
       } else {
         toast.error("Logout failed. Please try again.");
       }
