@@ -1,6 +1,8 @@
 # Galager's Documentation
 
-Visit Galager at: https://galager.vercel.app/
+![Archived](https://img.shields.io/badge/status-ARCHIVED-red)
+
+This project has been archived and is no longer maintained.
 
 ## What is Galager?
 
