@@ -5,7 +5,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["next/babel", "next/core-web-vitals", "eslint:recommended"],
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest"
