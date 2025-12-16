@@ -5,8 +5,10 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
-  "overrides": [],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": "latest"
   },
